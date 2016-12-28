@@ -1,0 +1,273 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://mdbootstrap.com/live/_MDB/js/tether.min.js"></script>
+<script src="http://mdbootstrap.com/live/_MDB/js/bootstrap.min.js"></script>
+<script src="http://mdbootstrap.com/live/_MDB/js/mdb.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+<script src="bower_components/bootstrap-fileinput/js/fileinput.min.js" ></script>
+<script src="bower_components/swiper/dist/js/swiper.min.js" ></script>
+<script src="js/main.js"></script>
+<script>
+// 메인header skin
+$(".button-collapse").sideNav();
+// Custom scrollbar init
+var el = document.querySelector('.custom-scrollbar');
+Ps.initialize(el);
+
+// top_chart1
+$(function () {
+  var option = {
+  responsive: true,
+  };
+
+  // Get the context of the canvas element we want to select
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var myLineChart = new Chart(ctx).Line(data, option); //'Line' defines type of the chart.
+});
+
+$(function () {
+  var data = {
+  labels: ["January", "February", "March", "April", "May", "June", "July"],
+  datasets: [
+      {
+          label: "My First dataset",
+          fillColor: "rgba(220,220,220,0.2)",
+          strokeColor: "rgba(220,220,220,1)",
+          pointColor: "rgba(220,220,220,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(220,220,220,1)",
+          data: [65, 59, 80, 81, 56, 55, 40]
+      },
+      {
+          label: "My Second dataset",
+          fillColor: "rgba(151,187,205,0.2)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28, 48, 40, 19, 86, 27, 90]
+      }
+      ]
+  };
+
+    //top_chart2
+    var option = {
+      responsive: true,
+      };
+
+      // Get the context of the canvas element we want to select
+      var ctx = document.getElementById("myChart2").getContext('2d');
+      var myRadarChart = new Chart(ctx).Radar(data, option); //'Line' defines type of the chart.
+    });
+
+  var data = {
+      labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+      datasets: [
+          {
+              label: "My First dataset",
+              fillColor: "rgba(220,220,220,0.2)",
+              strokeColor: "rgba(220,220,220,1)",
+              pointColor: "rgba(220,220,220,1)",
+              pointStrokeColor: "#fff",
+              pointHighlightFill: "#fff",
+              pointHighlightStroke: "rgba(220,220,220,1)",
+              data: [65, 59, 90, 81, 56, 55, 40]
+          },
+          {
+              label: "My Second dataset",
+              fillColor: "rgba(151,187,205,0.2)",
+              strokeColor: "rgba(151,187,205,1)",
+              pointColor: "rgba(151,187,205,1)",
+              pointStrokeColor: "#fff",
+              pointHighlightFill: "#fff",
+              pointHighlightStroke: "rgba(151,187,205,1)",
+              data: [28, 48, 40, 19, 96, 27, 100]
+          }
+      ]
+  };
+
+  // bottom_chart1
+  $(function () {
+      var option = {
+      responsive: true,
+      };
+
+      // Get the context of the canvas element we want to select
+      var ctx = document.getElementById("myChart3").getContext('2d');
+      var myBarChart = new Chart(ctx).Bar(data, option); //'Line' defines type of the chart.
+  });
+
+  var data = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+          {
+              label: "My First dataset",
+              fillColor: "rgba(220,220,220,0.5)",
+              strokeColor: "rgba(220,220,220,0.8)",
+              highlightFill: "rgba(220,220,220,0.75)",
+              highlightStroke: "rgba(220,220,220,1)",
+              data: [65, 59, 80, 81, 56, 55, 40]
+          },
+          {
+              label: "My Second dataset",
+              fillColor: "rgba(151,187,205,0.5)",
+              strokeColor: "rgba(151,187,205,0.8)",
+              highlightFill: "rgba(151,187,205,0.75)",
+              highlightStroke: "rgba(151,187,205,1)",
+              data: [28, 48, 40, 19, 86, 27, 90]
+          }
+      ]
+  };
+
+  // chart2
+  $(function () {
+      $('.min-chart#chart-sales').easyPieChart({
+          barColor: "#fc8c74",
+          onStep: function (from, to, percent) {
+              $(this.el).find('.percent').text(Math.round(percent));
+          }
+      });
+      $('.min-chart2#chart-sales2').easyPieChart({
+          barColor: "#86dada",
+          onStep: function (from, to, percent) {
+              $(this.el).find('.percent').text(Math.round(percent));
+          }
+      });
+      $('.min-chart3#chart-sales3').easyPieChart({
+          barColor: "#92bbd9",
+          onStep: function (from, to, percent) {
+              $(this.el).find('.percent').text(Math.round(percent));
+          }
+      });
+  });
+
+  // 메인페이지 팀룸 슬라이더
+  var swiper = new Swiper('.swiper1', {
+      pagination: '.swiper-pagination1',
+      paginationClickable: true
+  });
+
+  // 메인페이지 공지사항 슬라이더
+  var swiper = new Swiper('.swiper2', {
+      pagination: '.swiper-pagination2',
+      paginationClickable: true
+  });
+
+  // 파일업로더
+  $("#file-1, #file-2").fileinput({
+      uploadUrl: '#', // you must set a valid URL here else you will get an error
+      allowedFileExtensions : ['jpg', 'png','gif'],
+      overwriteInitial: false,
+      maxFileSize: 1000,
+      maxFilesNum: 10,
+      //allowedFileTypes: ['image', 'video', 'flash'],
+      slugCallback: function(filename) {
+          return filename.replace('(', '_').replace(']', '_');
+      }
+  });
+
+  // 배너 미리보고 이미지 삭제
+   var index = 0;
+   var onImg = $('.sub_Banner > div').find("img");
+   var removeBtn = $('.remove_img');
+   $(removeBtn).each( function(index) {
+       $(this).on('click', function(ev) {
+           ev.preventDefault();
+            if ( index > onImg.length+1)
+            return false;
+           $('.sub_Banner > div:eq('+index+')').find("img").attr("src", "imgs/img_blank.gif");
+       });
+   });
+
+  /*
+  *  사원 리스트-> 모달
+  */
+  var idx = 0;
+  //var staffDetail = $('#staffModal').each(function(idx){});
+  var staffDetail = $('#staffModal');
+  //alert(staffDetail.index());
+
+  $("#staff_list > tbody > tr ").each(function(index) {
+ //     var this = $("#staff_list > tbody > tr ").each(function(index));
+      $.this = this;
+      $($.this).on("click", function(ev) {
+          ev.preventDefault();
+          $('#staffModal').modal('show');
+      });
+  });
+
+  /*
+  * 생년월일 입력, 초기 셋팅은 오늘 날짜로
+  */
+  /*$('.datepicker').pickadate();*/
+  $(document).ready( function() {
+      var now = new Date();
+      var day = ("0" + now.getDate()).slice(-2);
+      var month = ("0" + (now.getMonth() + 1)).slice(-2);
+      var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+     $('#datepicker').val(today);
+  });
+
+  /*
+  *  자택주소 입력위한 우편번호 찾기 api - go host!
+  */
+  var width = 500;
+  var height= 500;
+  var themeObj = {
+     bgColor: "#313d4a", //바탕 배경색
+     outlineColor: "#f1efef" //테두리
+  };
+
+  function home_addFind() {
+      new daum.Postcode({
+      width:width,
+      height:height,
+          oncomplete: function(data) {
+              // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+              // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+              // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+              var fullAddr = ''; // 최종 주소 변수
+              var extraAddr = ''; // 조합형 주소 변수
+
+              // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+              if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                  fullAddr = data.roadAddress;
+
+              } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                  fullAddr = data.jibunAddress;
+              }
+
+              // 사용자가 선택한 주소가 도로명 타입일때 조합한다.
+              if(data.userSelectedType === 'R'){
+                  //법정동명이 있을 경우 추가한다.
+                  if(data.bname !== ''){
+                      extraAddr += data.bname;
+                  }
+                  // 건물명이 있을 경우 추가한다.
+                  if(data.buildingName !== ''){
+                      extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                  }
+                  // 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+                  fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+              }
+
+              // 우편번호와 주소 정보를 해당 필드에 넣는다.
+              document.getElementById('home_postcode').value = data.zonecode; //5자리 새우편번호 사용
+              document.getElementById('home_address').value = fullAddr;
+
+              // 커서를 상세주소 필드로 이동한다.
+              document.getElementById('home_address2').focus();
+          },
+          theme: themeObj
+      }).open({
+          left: (window.screen.width / 2) - (width / 2),
+          top: (window.screen.height / 4) - (height / 10)
+      });
+  }
+
+</script>
+
+</body>
+</html>

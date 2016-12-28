@@ -1,0 +1,581 @@
+/*
+* admin - staff management
+*/
+.admin-info > .top_modal {
+    position:relative;
+    margin-top:20px;
+}
+.admin-info > .top_modal > .modal_btn {
+    margin-left:0;
+    position:absolute;
+    top:0;
+    right:0;
+    text-align:right;
+    padding-right:0;
+}
+.admin-info > .top_modal > span {
+    display:block;
+    width:150px;
+    height:50px;
+    line-height:50px;
+    text-indent:10px;
+    background:#648ca5;
+    border-radius:5px;
+    color:#fff;
+    font-size:14px;
+}
+.admin-info > .top_modal > span > img {
+    vertical-align:middle;
+    width:25px;
+    margin:-3px 5px 0 15px;
+}
+
+/* table search group - select , search btn */
+.adminAdd_view .dropdown-toggle::after {
+    content:none;
+}
+.adminAdd_view > .adminSelect_opt.select_option {
+    margin-top:100px;
+}
+.adminSelect_opt.select_option > .input-group {
+    margin-top:-5px;
+    width:25%;
+}
+.adminSelect_opt.select_option .input-group .form-control {
+    position:relative;
+    margin-left:5px;
+    padding-left:20px;
+    width:70%;
+}
+
+/* table - staff list */
+.table_wrap {
+    margin:0;
+    padding:0;
+    margin-top:50px;
+    padding:1rem 1.5rem;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:4px;
+}
+#staff_list {
+    border-bottom:1px solid #ccc;
+    padding:0;
+    margin:0;
+}
+#staff_list > thead {
+    width:100%;
+    height:50px;
+    background-color:#f0f1f4;
+    border-bottom:3px solid #ccc;
+}
+#staff_list > thead > tr {
+    background-color:#f0f1f4;
+}
+#staff_list > thead > tr > th {
+    line-height:31px;
+}
+#staff_list > thead > tr > th,
+#staff_list > tbody > tr > th  {
+    text-align: center;
+} 
+#staff_list > tbody > tr {
+    cursor: pointer;
+    background:#fbfbfb;  
+}
+#staff_list > tbody > tr > th {
+    font-weight:300;
+    font-size:15px;
+    line-height:24px;
+}
+#staff_list > tbody > tr > td {
+    font-size:14px;
+    line-height:25px;
+    text-align: center;
+    line-height:24px;
+}
+[type=checkbox]+label:before {
+    top:-7px;
+    left:8px;
+}
+
+/* pagination */
+.adminAdd_view .pagi_nav {
+    text-align: center;
+    margin-top:24px;
+}
+.adminAdd_view .pagi_nav a {
+    color:#333;
+}
+
+
+/* add New staff modal - 본사 직원 정보 신규 등록 */
+#addStaffModal {
+/*    margin-top:50px;*/
+    top:13%;
+}
+#addStaffModal .modal2_form {
+    overflow: hidden;
+}
+#addStaffModal .modal-content .modal-header {
+    overflow: hidden;
+    border-bottom:none;
+}
+#addStaffModal .inner_header {
+    overflow: hidden;
+    padding-bottom:5px;
+    border-bottom:3px solid;
+}
+#addStaffModal .modal-content .inner_header > h3.modal-title {
+    float:left;
+    font-size:18px;
+    font-weight:700;
+    line-height:60px;
+}
+#addStaffModal .header_btnGroup,
+#modifyStaffModal .header_btnGroup {
+    float:right;
+}
+.inner_header > .header_btnGroup > .btn.btn-default.btn_staffAdd,
+.inner_header > .header_btnGroup > .btn.btn-default.btn_staffModi {
+    background-color:#fc322c;
+}
+.inner_header > .header_btnGroup > .btn.btn-default.btn_closed,
+.inner_header > .header_btnGroup > .btn.btn-default.closedModi {
+    background-color:#aaa;
+}
+.inner_header > .header_btnGroup > .btn.btn-default.btn_staffAdd:hover,
+.inner_header > .header_btnGroup > .btn.btn-default.btn_staffAdd:focus,
+.inner_header > .header_btnGroup > .btn.btn-default.btn_staffModi:hover,
+.inner_header > .header_btnGroup > .btn.btn-default.btn_staffModi:focus {
+    background-color:#de3e3a!important;
+}
+.inner_header > .header_btnGroup > .btn.btn-default.btn_closed:hover,
+.inner_header > .header_btnGroup > .btn.btn-default.btn_closed:focus,
+.inner_header > .header_btnGroup > .btn.btn-default.closedModi:hover,
+.inner_header > .header_btnGroup > .btn.btn-default.closedModi:focus {
+    background-color:#999!important;
+}
+
+/*// 등록 여부 묻기 dialog modal  //*/
+#addConfirm {
+    top:37%;
+}
+#addConfirm .modal-content {
+    border:1px solid #f7f7f7;
+}
+#addConfirm .modal-content > .modal-body {
+    text-align: center;
+}
+#addConfirm .modal-content > .modal-body > p {
+    padding-top:20px;
+}
+#addConfirm .modal-content > .modal-footer {
+    border-top:none;
+    text-align: center;
+}
+#addConfirm .modal-content > .modal-footer > .btn {
+    width:45%;
+}
+#addConfirm .modal-content > .modal-footer > .btn.btn-default.btn_confirm,
+#modiSuccess .modal-content > .modal-footer > .btn.btn-default,
+#delConfirm .modal-content > .modal-footer > .btn.btn-default.btn_delete {
+    background-color:#fc322c;
+}
+#addConfirm .modal-content > .modal-footer > .btn.btn-default.btn_closed,
+#delConfirm .modal-content > .modal-footer > .btn.btn-default.btn_cancle {
+    background-color:#aaa;
+}
+#addConfirm .modal-content > .modal-footer > .btn.btn-default.btn_confirm:hover,
+#addConfirm .modal-content > .modal-footer > .btn.btn-default.btn_confirm:focus,
+#modiSuccess .modal-content > .modal-footer > .btn.btn-default:hover,
+#delConfirm .modal-content > .modal-footer > .btn.btn-default.btn_delete:hover,
+#delConfirm .modal-content > .modal-footer > .btn.btn-default.btn_delete:focus {
+    background-color:#de3e3a!important;
+}
+#addConfirm .modal-content > .modal-footer > .btn.btn-default.btn_closed:hover,
+#addConfirm .modal-content > .modal-footer > .btn.btn-default.btn_closed:focus,
+#delConfirm .modal-content > .modal-footer > .btn.btn-default.btn_cancle:hover {
+    background-color:#999!important;
+}
+
+/* 회원 등록 입력 폼 + 수정폼과 동일 설정 */
+#addStaffModal .modal2_form > div > h4,
+#modifyStaffModal .modal2_form > div > h4 {
+    text-align: left;
+    font-weight:700;
+    margin:0px 0 10px 12px;
+}
+#addStaffModal .form01,
+#modifyStaffModal .form01 {
+    float:left;
+    width:100%;
+    margin-right:4%;
+}
+#addStaffModal .form01>div,
+#modifyStaffModal .form01 > div{
+    margin-bottom:5px;
+}
+#addStaffModal div>span.input-group-addon,
+#modifyStaffModal div>span.input-group-addon {
+    width:110px;
+    font-size:12px;
+    text-align:left;
+}
+#modifyStaffModal div > .input-group>.input-group-addon {
+    font-size:13px;
+}
+
+#addStaffModal .modal-body > h4 {
+}
+#addStaffModal .modal-body div .input-group>.input-group-addon {
+    font-size:13px;
+}
+#addStaffModal .modal-body .input-group > input {
+    margin-top:3px;
+    margin-left:20px;
+    height:21px;
+    padding:3px 10px;
+    width:96%;
+}
+#addStaffModal .modal-body .input-group input {
+}
+#addStaffModal .modal-body .idInput_group.input-group { 
+    width:45%;
+}
+#addStaffModal .modal-body .input-group > .id_input {
+    width:50%;
+    padding-right:0;
+}
+#addStaffModal .modal-body .input-group > .id_mail {
+    display: inline-block;
+    width:37%;
+    text-align: left;
+    padding:0;
+    margin:0;
+    margin-top:5px;
+}
+.input-group.email_box > .email_input {
+    text-align: left;
+    width:60%;
+    padding-left:30px;
+    font-size:19px;
+    line-height:35px;
+}
+.input-group.inlinePhone_box > .inline_phone {
+    text-align: left;
+    overflow: hidden;
+}
+.input-group.inlinePhone_box > .inline_phone > .fix_num {
+    float: left;
+    width:10%;
+    padding-left:30px;
+    line-height:35px;
+}
+.input-group.inlinePhone_box > .inline_phone > .fix_num.fix_dash {
+    padding-left:10px;
+    width:3%;
+}
+.input-group.inlinePhone_box > .inline_phone > input[type="text"] {
+    float: left;
+    width:6%;
+    padding:0;
+    margin:0;
+    padding-left:10px;
+}
+.input-group.cellPhone_box > .cell_phone {
+    text-align: left;
+    overflow: hidden;
+}
+.input-group.cellPhone_box > .cell_phone > .fix_num {
+    float: left;
+    width:10%;
+    padding-left:30px;
+    line-height:35px;
+}
+.input-group.cellPhone_box > .cell_phone > .fix_num.fix_dash {
+    padding-left:10px;
+    width:3%;
+}
+.input-group.cellPhone_box > .cell_phone > input[type="text"] {
+    float: left;
+    width:6%;
+    padding:0;
+    margin:0;
+    padding-left:10px;
+}
+.input-group.homeAdd_box > .home_address {
+}
+.input-group.homeAdd_box > .home_address input[type="text"] {
+    padding-left:10px;
+    margin-left:20px;
+    width:96%;
+}
+.input-group.homeAdd_box > .home_address > span {
+    width:50%;
+    text-align: left;
+    margin:0;
+    padding:0;
+}
+.input-group.homeAdd_box > .home_address > span > input[type="text"] {
+    float: left;
+    text-align: center;
+    width:22.2%;
+    padding-right:10px;
+}
+.input-group.homeAdd_box > .home_address > span > input[type="button"] {
+    float: left;
+    width:16%;
+    background-color: #aaa;
+    line-height:35px;
+    color:#fff;
+    font-size:13px;
+    border:none;
+}  
+.input-group.homeAdd_box > .home_address > span > input[type="button"]:hover {
+    background-color: #999;
+}
+.input-group.homeAdd_box > .home_address input[type="text"]:first-child {
+}
+
+
+/*////////////////////////////// admin modal select ///////////////////////////*/
+
+.adminAdd_view .dropdown-toggle::after {
+    content:none;
+}
+.adminAdd_view .unit_option {
+    width:100%;
+    text-align: left;   
+}
+.adminAdd_view .unit_option > .unit {
+    display: inline-block;
+    width:49%;
+    margin:2px 0;
+}
+.adminAdd_view .unit_option > .unit > span {
+    display: inline-block;
+    float: left;
+    padding-left:30px;
+    width:30%;
+    line-height:42px;
+    font-size:14px;
+}
+.unit > .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {    
+   display: inline-block;
+   float:left;
+   width:50%;
+}
+.unit > .bootstrap-select.btn-group.show-tick > .btn.btn-default {
+    margin-bottom:0;
+    height:42px;
+    background-color:#f9f9f9;
+    border:1px solid rgba(0,0,0,0.1);
+    color:#333!important;
+    box-shadow:none;
+    padding-left:20px;
+}
+.unit > .bootstrap-select.btn-group.show-tick > .btn.btn-default:hover,
+.unit > .bootstrap-select.btn-group.show-tick > .btn.btn-default:focus,
+.unit > .btn-group.bootstrap-select.show-tick.open>.dropdown-toggle.btn-default {
+    background-color:#f1f1f1!important;
+}
+.unit > .bootstrap-select > .dropdown-menu {
+    top:100%;
+    margin-top:-1px;
+}
+.unit_option .btn-group>.btn:first-child {
+    height:45px;
+}
+
+
+/* all page select option -!!!!!!! non-modal design */
+.select_option > .btn-group.bootstrap-select.show-tick > .btn.btn-default {
+    background-color:#fff;
+    border:1px solid rgba(0,0,0,0.2);
+    color:#333!important;
+    box-shadow:none;
+}
+.select_option > .btn-group.bootstrap-select.show-tick > .btn.btn-action:focus, 
+.select_option > .btn-group.bootstrap-select.show-tick > .btn.btn-action:hover,
+.select_option > .btn-group.bootstrap-select.show-tick > .btn.btn-default:hover, 
+.select_option > .btn-group.bootstrap-select.show-tick > .btn.btn-default:focus,
+.select_option > .btn-group.bootstrap-select.show-tick.open>.dropdown-toggle.btn-default {
+    background-color:#f1f1f1!important;
+}
+
+
+/*
+* 직원정보 페이지
+*/
+#staffModal.modal {
+    top:16%;
+}
+#staffModal .modal-header {
+    border-bottom:none;
+}
+#staffModal .modal-title {
+    font-weight:700;
+    font-size:18px;
+    padding-bottom:10px;
+    padding-left:5px;
+    border-bottom:5px solid;
+}
+#staffModal .modal-body {
+    border-bottom:none;
+    margin-bottom:0;
+    padding-bottom:15px;
+}
+#staffModal .modal-body > .pop_table {
+    border:1px solid #ccc;
+    width:100%;
+    display: block;
+    padding:10px;
+}
+#staffModal .modal-body > .pop_table > thead {
+    display: block;
+    border-bottom:1px solid #777;
+    padding-bottom:10px;
+}
+#staffModal .modal-body > .pop_table > thead > tr > th > h5 {
+    padding-top:10px;
+    padding-left:10px;
+    color:#fc322c;
+    font-weight:600;
+}
+#staffModal .modal-body > .pop_table > tbody {
+    display: block;
+    padding-top:5px;
+}
+#staffModal .modal-body > .pop_table > tbody > tr {
+    width:100%;
+    display: block;
+}
+#staffModal .modal-body > .pop_table > tbody > tr > th {
+    display: inline-block;
+    width:22%;  
+    padding-left:10px;
+}
+#staffModal .modal-body > .pop_table > tbody > tr > td {
+    display: inline-block;
+    font-size:16px;
+}
+#staffModal .modal-footer {
+    padding-top:0;
+    margin-top:0;
+}
+.staffVw_footer.modal-footer {
+    border-top:none;
+}
+#staffModal .btn_box {
+    margin-top:0;
+}
+
+
+
+/*
+*    직원 정보 수정페이지
+*/
+/*// 수정 정보 등록여부, 삭제여부 dialog  //*/
+#delConfirm {
+    margin-top:21%;
+}
+#delConfirm .modal-content {
+    border:1px solid #f7f7f7;
+}
+#delConfirm .modal-content > .modal-body {
+    text-align: center;
+    
+}
+#delConfirm .modal-content > .modal-body > p {
+    padding-top:20px;
+}
+#delConfirm .modal-content > .modal-footer {
+    border-top:none;
+    text-align:center;
+}
+#delConfirm .modal-content > .modal-footer > .btn {
+    width:45%;
+}
+
+/*
+*  본사 직원 수정 폼
+*/
+#modifyStaffModal {
+    top:12%;
+}
+#modifyStaffModal .modal-content .modal-header {
+    overflow: hidden;
+    border-bottom:none;
+}
+#modifyStaffModal .inner_header {
+    overflow: hidden;
+    padding-bottom:5px;
+    border-bottom:3px solid;
+}
+#modifyStaffModal .modal-content .inner_header > h3.modal-title {
+    float:left;
+    font-size:18px;
+    font-weight:700;
+    line-height:60px;
+}
+#modifyStaffModal .modal-body > h4 {
+}
+#modifyStaffModal .modal-body .input-group > input {
+    margin-top:3px;
+    margin-left:20px;
+    height:21px;
+    padding:3px 10px;
+    width:96%;
+}
+#modifyStaffModal .modal-body .input-group input {    
+}
+#modifyStaffModal .modal-body .idInput_group.input-group { 
+    width:45%;
+}
+#modifyStaffModal .modal-body .input-group > .id_input {
+    width:50%;
+    padding-right:0;
+}
+#modifyStaffModal .modal-body .input-group > .id_mail {
+    display: inline-block;
+    width:37%;
+    text-align: left;
+    padding:0;
+    margin:0;
+    margin-top:5px;
+}
+
+/*
+* 수정 확인 modal, modification Success!
+*/
+#modiSuccess.modal {
+    top:37%;
+}
+#modiSuccess .modal-content {
+    border:1px solid #f7f7f7;
+    margin:0 auto;
+    width:50%;
+}
+#modiSuccess .modal-body > p {
+    text-align: center;
+    padding-top:20px;
+}
+#modiSuccess .modal-content > .modal-footer {
+    border-top:none;
+}
+#modiSuccess .modal-content > .modal-footer > .btn.btn-default {
+    width:100%;
+    margin:0;
+}
+
+/*
+* staff list - empty, no staff 등록된 직원이 없습니다
+*/
+#staff_list .no_staff {
+    cursor:auto;
+}
+.no_staff > td > p{
+    padding:30px 0 30px 0;
+}
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>띠용 본사 CMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.6.1">
+  <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-fileinput/css/fileinput.min.css"><!--file-->
+  <link rel="stylesheet" href="bower_components/bootstrap3-dialog-master/dist/css/bootstrap-dialog.min.css">
+
+  <link rel="stylesheet" href="css/good.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/manage.css">
+  <link rel="stylesheet" href="css/inquire.css">
+  <link rel="stylesheet" href="css/admin.css">
+
+</head>
+<body class="fixed-sn grey-skin">
+
+  <!--Double navigation-->
+  <header class="main_header">
+      <!-- Sidebar navigation -->
+      <ul id="slide-out" class="side-nav fixed custom-scrollbar">
+
+          <!-- Logo -->
+          <li>
+              <div class="logo-wrapper waves-light">
+                  <a href="main.html"><img src="imgs/logo_admin.png" class="img-fluid flex-center"></a>
+              </div>
+          </li>
+          <!--/. Logo -->
+
+          <!--member_info-->
+          <div class="member_info">
+              <img src="imgs/profile.gif" alt="사원 프로필 사진" class="rounded-circle">
+              <p>ID : ddiyoung</p>
+              <p>담당자 : 띠요옹</p>
+          </div>
+
+          <!--Search Form-->
+          <li>
+              <form class="search-form" role="search">
+                  <div class="form-group waves-light">
+                      <input type="text" class="form-control" placeholder="가맹점 검색">
+                  </div>
+              </form>
+          </li>
+          <!--/.Search Form-->
+
+          <!-- Side navigation links -->
+          <li>
+              <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-bullhorn" aria-hidden="true"></i>본사 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#" class="waves-effect">팀룸</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">일정관리</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">본사 공지사항</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-home" aria-hidden="true"></i>가맹점 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="manage.html" class="waves-effect">운영 관리</a>
+                              </li>
+                              <li><a href="inquire.html" class="waves-effect">문의 관리</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-edit" aria-hidden="true"></i>재고 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#" class="waves-effect">입고 관리</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">출고 관리</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-pie-chart" aria-hidden="true"></i>통계 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#" class="waves-effect">매장별 노출 통계</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">지역별 노출 통계</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">기간별 노출 통계</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">업종별 노출 통계</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-user-plus" aria-hidden="true"></i>admin관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="admin.html" class="waves-effect">등록 관리</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </li>
+          <!--/. Side navigation links -->
+
+      </ul>
+      <!--/. Sidebar navigation -->
+
+      <!--Navbar-->
+      <nav class="navbar navbar-fixed-top scrolling-navbar double-nav">
+
+          <!-- SideNav slide-out button -->
+          <div class="pull-left">
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+          </div>
+
+          <!-- Breadcrumb-->
+          <div class="breadcrumb-dn">
+              <!--<p>Breadcrumb or page title</p>-->
+          </div>
+
+          <ul class="nav navbar-nav pull-right">
+              <li class="nav-item ">
+                  <a class="nav-link"><i class="fa fa-bell" aria-hidden="true"></i> <span class="hidden-sm-down">알람</span></a>
+              </li>
+              <li class="nav-item ">
+                <!-- a태그 변경되었습니다 (추가) 되었습니다. -->
+                <a class="nav-link" href="login.html" data-toggle="modal" data-target="#myModal10">
+                  <i class="fa fa-sign-out" aria-hidden="true"></i>
+                  <span class="hidden-sm-down">로그아웃</span>
+                </a>
+              </li>
+          </ul>
+      </nav>
+      <!--/.Navbar-->
+
+      <!-- 로그아웃 클릭시 Modal (추가) 되었습니다. -->
+      <div class="modal fade delete_md" id="myModal10" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <!--Content-->
+              <div class="modal-content">
+                  <!--Header-->
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <!--Body-->
+                  <div class="modal-body">
+                    <div class="logOut_img">
+                      <img src="imgs/logout_img.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <!--Footer-->
+                  <div class="modal-footer">
+                      <a href="login.html" class="btn btn-secondary" data-dismiss="modal">안녕</a>
+                      <button type="button" class="btn btn-primary">취소</button>
+                  </div>
+              </div>
+              <!--/.Content-->
+          </div>
+      </div>
+      <!--/.로그아웃-->
+
+  </header>
+  <!--/Double navigation-->

@@ -1,0 +1,57 @@
+<main class="manage_view inquire_view">
+    <div class="manage-info">
+        <div class="top_modal">
+            <span>
+              <img src="imgs/manage_icon.png" alt="">
+                문의 관리
+            </span>
+        </div>
+    </div>
+
+    <div class="select_option">
+        <select class="selectpicker show-tick">
+            <option>최신순</option>
+            <option>등록순</option>
+            <option>과거순</option>
+        </select>
+        <div class="md-form input-group">
+            <input type="search" class="form-control" placeholder="사업자 번호, 가맹점 명, ID중 선택입력">
+            <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="button">Go!</button>
+            </span>
+        </div>
+    </div>
+
+    <!--toggle 게시판(문의관리)-->
+    <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+        <!--First panel-->
+        <div class="panel panel-default">
+            <!--Panel heading-->
+
+            <div class="thead">
+              <!-- <div class="delete">삭제</div> -->
+              <div class="number">No.</div>
+              <div class="target_name">매장이름</div>
+              <div class="area_locate">지역(구/동)</div>
+              <div class="phone">휴대전화번호</div>
+              <div class="category">업종</div>
+              <div class="inquire_note">문의내용</div>
+              <div class="sign_up">등록일자</div>
+            </div>
+
+            <!-- 게시판 -->
+            <div class="panel-heading" role="tab" id="headingOne">
+                <!-- 게시글 없을 경우 -> class="blank_inq" 추가되었습니다. -->
+                <h5 class="panel-title blank_inq">
+                    현재 등록된 문의내용이 없습니다.
+                </h5>
+            </div>
+        </div>
+        <!--/.all panel-->
+      </div>
+
+    <div class="btn_box">
+        <button type="button" class="btn btn-primary">수정</button>
+        <button type="button" class="btn btn-primary">삭제</button>
+    </div>
+</main>

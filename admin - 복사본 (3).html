@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="http://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.6.1">
+    <link rel="stylesheet" href="css/good.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/manage.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="bower_components/bootstrap3-dialog-master/dist/css/bootstrap-dialog.min.css">
+
+    <title>띠용 본사 CMS</title>
+</head>
+<body class="fixed-sn grey-skin">
+
+  <!--Double navigation-->
+  <header class="main_header">
+      <!-- Sidebar navigation -->
+      <ul id="slide-out" class="side-nav fixed custom-scrollbar">
+
+          <!-- Logo -->
+          <li>
+              <div class="logo-wrapper waves-light">
+                  <a href="main.html"><img src="imgs/logo_admin.png" class="img-fluid flex-center"></a>
+              </div>
+          </li>
+          <!--/. Logo -->
+
+          <!--member_info-->
+          <div class="member_info">
+              <img src="imgs/profile.gif" alt="사원 프로필 사진" class="rounded-circle">
+              <p>ID : ddiyoung</p>
+              <p>담당자 : 띠요옹</p>
+          </div>
+
+          <!--Search Form-->
+          <li>
+              <form class="search-form" role="search">
+                  <div class="form-group waves-light">
+                      <input type="text" class="form-control" placeholder="가맹점 검색 ..">
+                  </div>
+              </form>
+          </li>
+          <!--/.Search Form-->
+
+          <!-- Side navigation links -->
+          <li>
+              <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-bullhorn" aria-hidden="true"></i>본사 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#" class="waves-effect">팀룸</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">일정관리</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">본사 공지사항</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-home" aria-hidden="true"></i>가맹점 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="manage.html" class="waves-effect">운영 관리</a>
+                              </li>
+                              <li><a href="inquire.html" class="waves-effect">문의 관리</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-edit" aria-hidden="true"></i>재고 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#" class="waves-effect">입고 관리</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">출고 관리</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-pie-chart" aria-hidden="true"></i>통계 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#" class="waves-effect">매장별 노출 통계</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">지역별 노출 통계</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">기간별 노출 통계</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">업종별 노출 통계</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-user-plus" aria-hidden="true"></i>admin관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="admin.html" class="waves-effect">등록 관리</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </li>
+          <!--/. Side navigation links -->
+
+      </ul>
+      <!--/. Sidebar navigation -->
+
+      <!--Navbar-->
+      <nav class="navbar navbar-fixed-top scrolling-navbar double-nav">
+
+          <!-- SideNav slide-out button -->
+          <div class="pull-left">
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+          </div>
+
+          <!-- Breadcrumb-->
+          <div class="breadcrumb-dn">
+              <!--<p>Breadcrumb or page title</p>-->
+          </div>
+
+          <ul class="nav navbar-nav pull-right">
+              <li class="nav-item ">
+                  <a class="nav-link"><i class="fa fa-bell" aria-hidden="true"></i> <span class="hidden-sm-down">알람</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link"><i class="fa fa-sign-out" aria-hidden="true"></i> <span class="hidden-sm-down">로그아웃</span></a>
+              </li>
+          </ul>
+
+      </nav>
+      <!--/.Navbar-->
+
+</header>
+<!--/Double navigation-->
+
+<!--Admin layout-->
+<main class="adminAdd_view">
+    <div class="admin-info">
+        <div class="top_modal">
+            <span>
+              <img src="imgs/admin_icon.png" alt="">
+                등록 관리
+            </span>
+
+            <div class="modal_btn offset-md-9 col-lg-8 col-xl-8 col-sm-8 col-xs-8">
+
+                <button type="button" class="btn btn-primary btn-lg new_add" id="new_add" data-toggle="modal" data-target="#addStaffModal">신규 등록</button>
+
+                <!-- 신규등록 Modal -->
+                <div class="modal fade bd-example-modal-lg" id="addStaffModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+                            <!--Header-->
+                            <div class="modal-header">
+
+                                <div class="inner_header">
+                                    <h3 class="modal-title" id="myModalLabel">본사 직원 정보 신규 등록</h3>
+                                    <div class="header_btnGroup">
+                                        <button type="button" class="btn btn-default btn_staffAdd" data-toggle="modal" data-target="#addConfirm">등록</button>
+                                        <button type="button" class="btn btn-default btn_closed" data-dismiss="modal" aria-label="Close">취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body">
+
+                                <form class="modal2_form addStaff_form">
+                                    <div class="form01">
+                                        <h4>기본 정보</h4>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">이름</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">생년월일</span>
+                                            <input type="date" class="form-control" id="datepicker" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group idInput_group">
+                                            <span class="input-group-addon" id="basic-addon1">아이디</span>
+                                            <input type="text" class="form-control id_input" placeholder="" aria-describedby="basic-addon1">
+                                            <span class="id_mail">@ddiyoung.com</span>
+                                            
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">소속</span>
+                                            <div class="unit_option">
+                                                <div class="unit">
+                                                    <span>업무팀</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>팀 선택</option>
+                                                        <option value="총괄">총괄</option>
+                                                        <option value="개발">개발</option>
+                                                        <option value="운영관리">운영관리</option>
+                                                        <option value="전략기획">전략기획</option>
+                                                        <option value="디자인">디자인</option>
+                                                        <option value="경영지원">경영지원</option>
+                                                        <option value="기술지원">기술지원</option>
+                                                    </select>
+                                                </div>
+                                                <div class="unit">
+                                                    <span>담당업무</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>담당업무 선택</option>
+                                                        <option value="운영/CS">운영/CS</option>
+                                                        <option value="제휴/전략 기획">제휴/전략 기획</option>
+                                                        <option value="디자인">디자인</option>
+                                                        <option value="개발">개발</option>
+                                                        <option value="영업">영업</option>
+                                                        <option value="경영지원">경영지원</option>
+                                                        <option value="기술지원">기술지원</option>
+                                                    </select>
+                                                </div>
+                                                <div class="unit">
+                                                    <span>직급</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>직급 선택</option>
+                                                        <option value="사원">사원</option>
+                                                        <option value="대리">대리</option>
+                                                        <option value="팀장">팀장</option>
+                                                        <option value="과장">과장</option>
+                                                        <option value="실장">실장</option>
+                                                        <option value="CEO">CEO</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="unit">
+                                                    <span>계정권한</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>계정권한 선택</option>
+                                                        <option value="normal">normal</option>
+                                                        <option value="team admin">team admin</option>
+                                                        <option value="super admin &#40;view&#41;">super admin &#40;view&#41;</option>
+                                                        <option value="super admin">super admin</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md-form input-group email_box">
+                                            <span class="input-group-addon" id="basic-addon1">이메일</span>
+                                            <p class="email_input">
+                                                <span class="email_parc"><!--아이디 들어갈 공간-->jyeon90</span>
+                                                @ddiyoung.com
+                                            </p>
+                                        </div>
+                                        <div class="md-form input-group inlinePhone_box">
+                                                <span class="input-group-addon" id="basic-addon1">내선 번호</span>
+                                                <div class="inline_phone">
+                                                    <span class="fix_num">02 - </span> 
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                    <span class="fix_num fix_dash"> - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                        <div class="md-form input-group cellPhone_box">
+                                                <span class="input-group-addon" id="basic-addon1">휴대폰 번호</span>
+                                                <div class="cell_phone">
+                                                    <span class="fix_num">010 - </span> 
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                    <span class="fix_num fix_dash"> - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                        <div class="md-form input-group homeAdd_box">
+                                                <span class="input-group-addon" id="basic-addon1">자택 주소</span>
+                                                <div class="home_address">
+                                                    <span>
+                                                       <input type="text" id="home_postcode" placeholder="우편번호" aria-describedby="basic-addon1">
+                                                       <input type="button" onclick="home_addFind()" value="우편번호 찾기">
+                                                    </span>
+                                                    <input type="text" id="home_address" placeholder="주소" aria-describedby="basic-addon1">
+                                                    <input type="text" id="home_address2" placeholder="상세주소" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>                            
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                
+                <!--/// 등록 확인 모달  ///-->
+                    <div class="modal" id="addConfirm" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" style="display:none; z-index: 1060;">
+                        <div class="modal-dialog" role="dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p>새 정보를 등록하시겠습니까?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default btn_confirm">확인</button>
+                                <button class="btn btn-default btn_closed" data-dismiss="modal" aria-label="Close">취소</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                <!--/신규등록-->
+            </div>
+        </div>
+    </div>
+
+    <div class="select_option adminSelect_opt">
+        <select class="selectpicker show-tick">
+            <option>팀 선택</option>
+            <option value="총괄">총괄</option>
+            <option value="개발">개발</option>
+            <option value="운영관리">운영관리</option>
+            <option value="전략기획">전략기획</option>
+            <option value="디자인">디자인</option>
+            <option value="경영지원">경영지원</option>
+            <option value="기술지원">기술지원</option>
+        </select>
+
+        <select class="selectpicker show-tick">
+            <option value="최신순">최신순</option>
+            <option value="등록순">등록순</option>
+            <option value="과거순">과거순</option>
+        </select>
+        <div class="md-form input-group">
+            <input type="search" class="form-control" placeholder="팀명, 담당자 ID 중 선택입력">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-primary btn-lg">Go!</button>
+            </span>
+        </div>
+    </div>
+
+   <!-- 추가된 부분 table wrap 으로 table 태그를 감싸주세요! -->
+    <div class="table_wrap">
+        <table class="table" id="staff_list">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>ID</th>
+                    <th>계정권한</th>
+                    <th>팀</th>
+                    <th>직책</th>
+                    <th>이름</th>
+                    <th>등록일자</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>super admin&#40;view&#41;</td>
+                    <td>총괄</td>
+                    <td>CEO</td>
+                    <td>김정호</td>
+                    <td>2016-12-18</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>super admin</td>
+                    <td>총괄</td>
+                    <td>실장</td>
+                    <td>신원철</td>
+                    <td>2016-12-18</td>
+                </tr>
+                <tr>
+                    </td>
+                    <th scope="row">8</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>super admin</td>
+                    <td>개발</td>
+                    <td>팀장</td>
+                    <td>김경태</td>
+                    <td>2016-12-18</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>normal</td>
+                    <td>개발</td>
+                    <td>사원</td>
+                    <td>○○○</td>
+                    <td>2016-12-18</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>normal</td>
+                    <td>개발</td>
+                    <td>사원</td>
+                    <td>○○○</td>
+                    <td>2016-12-18</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>normal</td>
+                    <td>디자인</td>
+                    <td>사원</td>
+                    <td>○○○</td>
+                    <td>2016-12-18</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>normal</td>
+                    <td>디자인</td>
+                    <td>사원</td>
+                    <td>○○○</td>
+                    <td>2016-12-18</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>normal</td>
+                    <td>운영관리</td>
+                    <td>팀장</td>
+                    <td>○○○</td>
+                    <td>2016-12-18</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>normal</td>
+                    <td>경영지원</td>
+                    <td>팀장</td>
+                    <td>○○○</td>
+                    <td>2016-12-18</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>sss@ddiyoung.com</td>
+                    <td>normal</td>
+                    <td>전략기획</td>
+                    <td>팀장</td>
+                    <td>○○○</td>
+                    <td>2016-12-18</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--pagination-->
+    <nav class="pagi_nav">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+<!-- staff list modal -->
+    <div class="modal fade" id="staffModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="text-danger fa fa-times"></i></button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        <!--/// 직원 계정 출력 ///-->
+                        <strong class="staff_id">sss</strong>@ddiyoung.com 정보 
+                    </h4>
+                  </div>
+                  <div class="modal-body">
+                  
+                    <table class="pop_table">
+                        <thead>
+                        <tr>
+                            <th colspan="2">
+                                <h5>직원 정보</h5>
+                            </th>
+                        </tr>
+                        </thead>
+                        
+                         <tbody>
+                             <tr>
+                                 <th class="h6"><strong>ID</strong></th>
+                                 <td class="h5"><span>sss</span>@ddiyoung.com</td>
+                             </tr>
+                             
+                             <tr>
+                                 <th class="h6"><strong>직원권한</strong></th>
+                                 <td class="h5">normal</td>
+                             </tr>
+                             
+                             <tr>
+                                 <th class="h6"><strong>이름</strong></th>
+                                 <td class="h5">띵이</td>
+                             </tr>
+                             
+                             <tr>
+                                 <th class="h6"><strong>생년월일</strong></th>
+                                 <td class="h5">2016-12-18</td>
+                             </tr>
+                             
+                             <tr>
+                                 <th class="h6"><strong>연락처</strong></th>
+                                 <td class="h5">010-0000-0000</td>
+                             </tr>
+                             
+                             <tr>
+                                 <th class="h6"><strong>업무 팀</strong></th>
+                                 <td class="h5">운영관리 팀</td>
+                             </tr>  
+
+                             <tr>
+                                 <th class="h6"><strong>담당 업무</strong></th>
+                                 <td class="h5">운영 / cs</td>
+                             </tr>                            
+
+                             <tr>
+                                 <th class="h6"><strong>직책</strong></th>
+                                 <td class="h5">사원</td>
+                             </tr>
+
+                             <tr>
+                                 <th class="h6"><strong>내선번호</strong></th>
+                                 <td class="h5">02-2222-2333</td>
+                             </tr> 
+                         </tbody>
+                    </table>
+                  </div>
+                    
+                  <div class="modal-footer staffVw_footer">                  
+                    <div class="btn_box">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modifyStaffModal">수정</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#delConfirm">삭제</button>
+                    </div>
+                     
+                </div>
+              </div>
+            </div>
+            </div>
+<!-- fim Modal-->
+
+    <!-- 등록정보 수정 페이지 -->
+       <!-- 수정 Modal -->
+                <div class="modal fade bd-example-modal-lg" id="modifyStaffModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+                            <!--Header-->
+                            <div class="modal-header">
+
+                                <div class="inner_header">
+                                    <h3 class="modal-title" id="myModalLabel">본사 직원 정보 수정</h3>
+                                    <div class="header_btnGroup">
+                                        <button type="button" class="btn btn-default btn_staffModi" data-toggle="modal" data-dismiss="modal" data-target="#modiSuccess">수정완료</button>
+                                        <button type="button" class="btn btn-default closedModi" data-dismiss="modal" aria-label="Close">취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body">
+
+                                <form class="modal2_form addStaff_form">
+                                    <div class="form01">
+                                        <h4>기본 정보</h4>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">이름</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">생년월일</span>
+                                            <input type="date" class="form-control" id="datepicker" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group idInput_group">
+                                            <span class="input-group-addon" id="basic-addon1">아이디</span>
+                                            <input type="text" class="form-control id_input" placeholder="" aria-describedby="basic-addon1">
+                                            <span class="id_mail">@ddiyoung.com</span>
+                                            
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">소속</span>
+                                            <div class="unit_option">
+                                                <div class="unit">
+                                                    <span>업무팀</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>팀 선택</option>
+                                                        <option value="총괄">총괄</option>
+                                                        <option value="개발">개발</option>
+                                                        <option value="운영관리">운영관리</option>
+                                                        <option value="전략기획">전략기획</option>
+                                                        <option value="디자인">디자인</option>
+                                                        <option value="경영지원">경영지원</option>
+                                                        <option value="기술지원">기술지원</option>
+                                                    </select>
+                                                </div>
+                                                <div class="unit">
+                                                    <span>담당업무</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>담당업무 선택</option>
+                                                        <option value="운영/CS">운영/CS</option>
+                                                        <option value="제휴/전략 기획">제휴/전략 기획</option>
+                                                        <option value="디자인">디자인</option>
+                                                        <option value="개발">개발</option>
+                                                        <option value="영업">영업</option>
+                                                        <option value="경영지원">경영지원</option>
+                                                        <option value="기술지원">기술지원</option>
+                                                    </select>
+                                                </div>
+                                                <div class="unit">
+                                                    <span>직급</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>직급 선택</option>
+                                                        <option value="사원">사원</option>
+                                                        <option value="대리">대리</option>
+                                                        <option value="팀장">팀장</option>
+                                                        <option value="과장">과장</option>
+                                                        <option value="실장">실장</option>
+                                                        <option value="CEO">CEO</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="unit">
+                                                    <span>계정권한</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>계정권한 선택</option>
+                                                        <option value="normal">normal</option>
+                                                        <option value="team admin">team admin</option>
+                                                        <option value="super admin &#40;view&#41;">super admin &#40;view&#41;</option>
+                                                        <option value="super admin">super admin</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md-form input-group email_box">
+                                            <span class="input-group-addon" id="basic-addon1">이메일</span>
+                                            <p class="email_input">
+                                                <span class="email_parc"><!--아이디 들어갈 공간-->jyeon90</span>
+                                                @ddiyoung.com
+                                            </p>
+                                        </div>
+                                        <div class="md-form input-group inlinePhone_box">
+                                                <span class="input-group-addon" id="basic-addon1">내선 번호</span>
+                                                <div class="inline_phone">
+                                                    <span class="fix_num">02 - </span> 
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                    <span class="fix_num fix_dash"> - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                        <div class="md-form input-group cellPhone_box">
+                                                <span class="input-group-addon" id="basic-addon1">휴대폰 번호</span>
+                                                <div class="cell_phone">
+                                                    <span class="fix_num">010 - </span> 
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                    <span class="fix_num fix_dash"> - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                        <div class="md-form input-group homeAdd_box">
+                                                <span class="input-group-addon" id="basic-addon1">자택 주소</span>
+                                                <div class="home_address">
+                                                    <span>
+                                                       <input type="text" id="home_postcode" placeholder="우편번호" aria-describedby="basic-addon1">
+                                                       <input type="button" onclick="home_addFind()" value="우편번호 찾기">
+                                                    </span>
+                                                    <input type="text" id="home_address" placeholder="주소" aria-describedby="basic-addon1">
+                                                    <input type="text" id="home_address2" placeholder="상세주소" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>                            
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                
+                    <!--/// 수정 확인 모달  ///-->
+      <!--              <div class="modal" id="modiConfirm" role="dialog" aria-hidden="true" style="display:none; z-index: 1060;">
+                        <div class="modal-dialog" role="dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p>수정된 정보를 등록하시겠습니까?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default btn_confirm" data-toggle="modal" data-backdrop="static"  data-keyboard="false" data-dismiss="modal" data-target="#modiSuccess">확인</button>
+                                <button data-dismiss="modal" class="btn btn-default btn_cancle">취소</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>-->
+                    
+                    <!--/// 수정 완료 모달  ///-->
+                    <div class="modal" id="modiSuccess" role="dialog" aria-hidden="true" style="display:none; z-index: 1060;">
+                        <div class="modal-dialog" role="dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p>수정되었습니다.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal">확인</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <!--/// 삭제 확인 모달  ///-->
+                    <div class="modal" id="delConfirm" role="dialog" aria-hidden="true" style="display:none; z-index: 1060;">
+                        <div class="modal-dialog" role="dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p>해당 정보를 삭제하시겠습니까?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default btn_delete">확인</button>
+                                <button class="btn btn-default btn_cancle" data-dismiss="modal">취소</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+   
+</main>
+<!--/Main layout-->
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://mdbootstrap.com/live/_MDB/js/tether.min.js"></script>
+<script src="http://mdbootstrap.com/live/_MDB/js/bootstrap.min.js"></script>
+<script src="http://mdbootstrap.com/live/_MDB/js/mdb.min.js"></script>
+<script src="bower_components/bootstrap3-dialog-master/dist/js/bootstrap-dialog.min.js"></script>
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+<script>
+    $(".button-collapse").sideNav();
+
+    // Custom scrollbar init
+    var el = document.querySelector('.custom-scrollbar');
+    Ps.initialize(el);
+    
+    
+    
+    /*
+    *  사원 리스트-> 모달 
+    */
+    var idx = 0;
+    //var staffDetail = $('#staffModal').each(function(idx){});
+    var staffDetail = $('#staffModal');
+    //alert(staffDetail.index());
+    
+    $(staffDetail).each(function(idx){
+        console.log($(this).index(idx));
+    });
+    
+    
+    $("#staff_list > tbody > tr ").each(function(index) {
+   //     var this = $("#staff_list > tbody > tr ").each(function(index));
+        $.this = this;
+        $($.this).on("click", function(ev) {
+            ev.preventDefault();
+            $('#staffModal').modal('show');
+        });
+    });
+    
+    /*
+    
+    
+    
+    
+    
+    
+    */
+    
+    $('.btn-mais-info').on('click', function(event) {
+        $( '.open_info' ).toggleClass( "hide" );
+    });
+/*    $('tbody > tr').on('click', function(event) {
+        event.preventDefault();
+        $('#staffModal').modal('show');
+    })
+    
+    $('.btn-mais-info').on('click', function(event) {
+        $( '.open_info' ).toggleClass( "hide" );
+    })*/
+    
+    
+    /*
+    * 생년월일 입력, 초기 셋팅은 오늘 날짜로
+    */
+    /*$('.datepicker').pickadate();*/
+    $(document).ready( function() {
+        var now = new Date();
+        var day = ("0" + now.getDate()).slice(-2);
+        var month = ("0" + (now.getMonth() + 1)).slice(-2);
+        var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+       $('#datepicker').val(today);
+    });
+    
+    
+    
+    /*
+    *  자택주소 입력위한 우편번호 찾기 api - go host!
+    */
+    var width = 500;
+    var height= 500;
+    var themeObj = {
+       bgColor: "#313d4a", //바탕 배경색
+       outlineColor: "#f1efef" //테두리
+    };
+    
+    function home_addFind() {
+        new daum.Postcode({
+        width:width,
+        height:height,
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var fullAddr = ''; // 최종 주소 변수
+                var extraAddr = ''; // 조합형 주소 변수
+
+                // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    fullAddr = data.roadAddress;
+
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    fullAddr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 조합한다.
+                if(data.userSelectedType === 'R'){
+                    //법정동명이 있을 경우 추가한다.
+                    if(data.bname !== ''){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있을 경우 추가한다.
+                    if(data.buildingName !== ''){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+                    fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('home_postcode').value = data.zonecode; //5자리 새우편번호 사용
+                document.getElementById('home_address').value = fullAddr;
+
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById('home_address2').focus();
+            },
+            theme: themeObj
+        }).open({
+            left: (window.screen.width / 2) - (width / 2),
+            top: (window.screen.height / 4) - (height /10)
+           // top: 200
+        });
+    }
+    
+    $(".no_staff").unbind("click");
+
+</script>
+
+</body>
+</html>

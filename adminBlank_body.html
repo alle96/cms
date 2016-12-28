@@ -1,0 +1,463 @@
+<main class="adminAdd_view">
+    <div class="admin-info">
+        <div class="top_modal">
+            <span>
+              <img src="imgs/admin_icon.png" alt="">
+                등록 관리
+            </span>
+
+            <div class="modal_btn offset-md-9 col-lg-8 col-xl-8 col-sm-8 col-xs-8">
+                <button type="button" class="btn btn-primary btn-lg new_add" id="new_add" data-toggle="modal" data-target="#addStaffModal">신규 등록</button>
+                <!-- 신규등록 Modal -->
+                <div class="modal fade bd-example-modal-lg" id="addStaffModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+                            <!--Header-->
+                            <div class="modal-header">
+
+                                <div class="inner_header">
+                                    <h3 class="modal-title" id="myModalLabel">본사 직원 정보 신규 등록</h3>
+                                    <div class="header_btnGroup">
+                                        <button type="button" class="btn btn-default btn_staffAdd" data-toggle="modal" data-target="#addConfirm">등록</button>
+                                        <button type="button" class="btn btn-default btn_closed" data-dismiss="modal" aria-label="Close">취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body">
+
+                                <form class="modal2_form addStaff_form">
+                                    <div class="form01">
+                                        <h4>기본 정보</h4>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">이름</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">생년월일</span>
+                                            <input type="date" class="form-control" id="datepicker" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group idInput_group">
+                                            <span class="input-group-addon" id="basic-addon1">아이디</span>
+                                            <input type="text" class="form-control id_input" placeholder="" aria-describedby="basic-addon1">
+                                            <span class="id_mail">@ddiyoung.com</span>
+
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">소속</span>
+                                            <div class="unit_option">
+                                                <div class="unit">
+                                                    <span>업무팀</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>팀 선택</option>
+                                                        <option value="총괄">총괄</option>
+                                                        <option value="개발">개발</option>
+                                                        <option value="운영관리">운영관리</option>
+                                                        <option value="전략기획">전략기획</option>
+                                                        <option value="디자인">디자인</option>
+                                                        <option value="경영지원">경영지원</option>
+                                                        <option value="기술지원">기술지원</option>
+                                                    </select>
+                                                </div>
+                                                <div class="unit">
+                                                    <span>담당업무</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>담당업무 선택</option>
+                                                        <option value="운영/CS">운영/CS</option>
+                                                        <option value="제휴/전략 기획">제휴/전략 기획</option>
+                                                        <option value="디자인">디자인</option>
+                                                        <option value="개발">개발</option>
+                                                        <option value="영업">영업</option>
+                                                        <option value="경영지원">경영지원</option>
+                                                        <option value="기술지원">기술지원</option>
+                                                    </select>
+                                                </div>
+                                                <div class="unit">
+                                                    <span>직급</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>직급 선택</option>
+                                                        <option value="사원">사원</option>
+                                                        <option value="대리">대리</option>
+                                                        <option value="팀장">팀장</option>
+                                                        <option value="과장">과장</option>
+                                                        <option value="실장">실장</option>
+                                                        <option value="CEO">CEO</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="unit">
+                                                    <span>계정권한</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>계정권한 선택</option>
+                                                        <option value="normal">normal</option>
+                                                        <option value="team admin">team admin</option>
+                                                        <option value="super admin &#40;view&#41;">super admin &#40;view&#41;</option>
+                                                        <option value="super admin">super admin</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md-form input-group email_box">
+                                            <span class="input-group-addon" id="basic-addon1">이메일</span>
+                                            <p class="email_input">
+                                                <span class="email_parc"><!--아이디 들어갈 공간-->jyeon90</span>
+                                                @ddiyoung.com
+                                            </p>
+                                        </div>
+                                        <div class="md-form input-group inlinePhone_box">
+                                                <span class="input-group-addon" id="basic-addon1">내선 번호</span>
+                                                <div class="inline_phone">
+                                                    <span class="fix_num">02 - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                    <span class="fix_num fix_dash"> - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                        <div class="md-form input-group cellPhone_box">
+                                                <span class="input-group-addon" id="basic-addon1">휴대폰 번호</span>
+                                                <div class="cell_phone">
+                                                    <span class="fix_num">010 - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                    <span class="fix_num fix_dash"> - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                        <div class="md-form input-group homeAdd_box">
+                                                <span class="input-group-addon" id="basic-addon1">자택 주소</span>
+                                                <div class="home_address">
+                                                    <span>
+                                                       <input type="text" id="home_postcode" placeholder="우편번호" aria-describedby="basic-addon1">
+                                                       <input type="button" onclick="home_addFind()" value="우편번호 찾기">
+                                                    </span>
+                                                    <input type="text" id="home_address" placeholder="주소" aria-describedby="basic-addon1">
+                                                    <input type="text" id="home_address2" placeholder="상세주소" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+
+                <!--/// 등록 확인 모달  ///-->
+                    <div class="modal" id="addConfirm" role="dialog" aria-hidden="true" style="display:none; z-index: 1060;">
+                        <div class="modal-dialog" role="dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p>새 정보를 등록하시겠습니까?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default btn_confirm">확인</button>
+                                <button class="btn btn-default btn_closed" data-dismiss="modal" aria-label="Close">취소</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                <!--/신규등록-->
+            </div>
+        </div>
+    </div>
+
+    <div class="select_option adminSelect_opt">
+        <select class="selectpicker show-tick">
+            <option>팀 선택</option>
+            <option value="총괄">총괄</option>
+            <option value="개발">개발</option>
+            <option value="운영관리">운영관리</option>
+            <option value="전략기획">전략기획</option>
+            <option value="디자인">디자인</option>
+            <option value="경영지원">경영지원</option>
+            <option value="기술지원">기술지원</option>
+        </select>
+
+        <select class="selectpicker show-tick">
+            <option value="최신순">최신순</option>
+            <option value="등록순">등록순</option>
+            <option value="과거순">과거순</option>
+        </select>
+        <div class="md-form input-group">
+            <input type="search" class="form-control" placeholder="팀명, 담당자 ID 중 선택입력">
+            <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="button">Go!</button>
+            </span>
+        </div>
+    </div>
+
+    <div class="table_wrap">
+        <table class="table" id="staff_list">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>ID</th>
+                    <th>계정권한</th>
+                    <th>팀</th>
+                    <th>직책</th>
+                    <th>이름</th>
+                    <th>등록일자</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr class="no_staff">
+                   <td colspan="7"><p>현재 등록된 직원이 없습니다.</p></td>
+               </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--pagination-->
+
+<!-- staff list modal -->
+    <div class="modal fade" id="staffModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="text-danger fa fa-times"></i></button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        <!--/// 직원 계정 출력 ///-->
+                        <strong class="staff_id">sss</strong>@ddiyoung.com 정보
+                    </h4>
+                  </div>
+                  <div class="modal-body">
+
+                    <table class="pop_table">
+                        <thead>
+                        <tr>
+                            <th colspan="2">
+                                <h5>직원 정보</h5>
+                            </th>
+                        </tr>
+                        </thead>
+
+                         <tbody>
+                             <tr>
+                                 <th class="h6"><strong>ID</strong></th>
+                                 <td class="h5"><span>sss</span>@ddiyoung.com</td>
+                             </tr>
+
+                             <tr>
+                                 <th class="h6"><strong>직원권한</strong></th>
+                                 <td class="h5">normal</td>
+                             </tr>
+
+                             <tr>
+                                 <th class="h6"><strong>이름</strong></th>
+                                 <td class="h5">띵이</td>
+                             </tr>
+
+                             <tr>
+                                 <th class="h6"><strong>생년월일</strong></th>
+                                 <td class="h5">2016-12-18</td>
+                             </tr>
+
+                             <tr>
+                                 <th class="h6"><strong>연락처</strong></th>
+                                 <td class="h5">010-0000-0000</td>
+                             </tr>
+
+                             <tr>
+                                 <th class="h6"><strong>업무 팀</strong></th>
+                                 <td class="h5">운영관리 팀</td>
+                             </tr>
+
+                             <tr>
+                                 <th class="h6"><strong>담당 업무</strong></th>
+                                 <td class="h5">운영 / cs</td>
+                             </tr>
+
+                             <tr>
+                                 <th class="h6"><strong>직책</strong></th>
+                                 <td class="h5">사원</td>
+                             </tr>
+
+                             <tr>
+                                 <th class="h6"><strong>내선번호</strong></th>
+                                 <td class="h5">02-2222-2333</td>
+                             </tr>
+                         </tbody>
+                    </table>
+                  </div>
+
+                  <div class="modal-footer staffVw_footer">
+                    <div class="btn_box">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modifyStaffModal">수정</button>
+                        <button type="button" class="btn btn-primary">삭제</button>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            </div>
+<!-- fim Modal-->
+
+    <!-- 등록정보 수정 페이지 -->
+       <!-- 수정 Modal -->
+                <div class="modal fade bd-example-modal-lg" id="modifyStaffModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+                            <!--Header-->
+                            <div class="modal-header">
+
+                                <div class="inner_header">
+                                    <h3 class="modal-title" id="myModalLabel">본사 직원 정보 수정</h3>
+                                    <div class="header_btnGroup">
+                                        <button type="button" class="btn btn-default btn_staffModi" data-toggle="modal" data-dismiss="modal" data-target="#modiSuccess">수정완료</button>
+                                        <button type="button" class="btn btn-default closedModi" data-dismiss="modal" aria-label="Close">취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body">
+
+                                <form class="modal2_form addStaff_form">
+                                    <div class="form01">
+                                        <h4>기본 정보</h4>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">이름</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">생년월일</span>
+                                            <input type="date" class="form-control" id="datepicker" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group idInput_group">
+                                            <span class="input-group-addon" id="basic-addon1">아이디</span>
+                                            <input type="text" class="form-control id_input" placeholder="" aria-describedby="basic-addon1">
+                                            <span class="id_mail">@ddiyoung.com</span>
+
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">소속</span>
+                                            <div class="unit_option">
+                                                <div class="unit">
+                                                    <span>업무팀</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>팀 선택</option>
+                                                        <option value="총괄">총괄</option>
+                                                        <option value="개발">개발</option>
+                                                        <option value="운영관리">운영관리</option>
+                                                        <option value="전략기획">전략기획</option>
+                                                        <option value="디자인">디자인</option>
+                                                        <option value="경영지원">경영지원</option>
+                                                        <option value="기술지원">기술지원</option>
+                                                    </select>
+                                                </div>
+                                                <div class="unit">
+                                                    <span>담당업무</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>담당업무 선택</option>
+                                                        <option value="운영/CS">운영/CS</option>
+                                                        <option value="제휴/전략 기획">제휴/전략 기획</option>
+                                                        <option value="디자인">디자인</option>
+                                                        <option value="개발">개발</option>
+                                                        <option value="영업">영업</option>
+                                                        <option value="경영지원">경영지원</option>
+                                                        <option value="기술지원">기술지원</option>
+                                                    </select>
+                                                </div>
+                                                <div class="unit">
+                                                    <span>직급</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>직급 선택</option>
+                                                        <option value="사원">사원</option>
+                                                        <option value="대리">대리</option>
+                                                        <option value="팀장">팀장</option>
+                                                        <option value="과장">과장</option>
+                                                        <option value="실장">실장</option>
+                                                        <option value="CEO">CEO</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="unit">
+                                                    <span>계정권한</span>
+                                                    <select class="selectpicker show-tick">
+                                                        <option>계정권한 선택</option>
+                                                        <option value="normal">normal</option>
+                                                        <option value="team admin">team admin</option>
+                                                        <option value="super admin &#40;view&#41;">super admin &#40;view&#41;</option>
+                                                        <option value="super admin">super admin</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md-form input-group email_box">
+                                            <span class="input-group-addon" id="basic-addon1">이메일</span>
+                                            <p class="email_input">
+                                                <span class="email_parc"><!--아이디 들어갈 공간-->jyeon90</span>
+                                                @ddiyoung.com
+                                            </p>
+                                        </div>
+                                        <div class="md-form input-group inlinePhone_box">
+                                                <span class="input-group-addon" id="basic-addon1">내선 번호</span>
+                                                <div class="inline_phone">
+                                                    <span class="fix_num">02 - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                    <span class="fix_num fix_dash"> - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                        <div class="md-form input-group cellPhone_box">
+                                                <span class="input-group-addon" id="basic-addon1">휴대폰 번호</span>
+                                                <div class="cell_phone">
+                                                    <span class="fix_num">010 - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                    <span class="fix_num fix_dash"> - </span>
+                                                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                        <div class="md-form input-group homeAdd_box">
+                                                <span class="input-group-addon" id="basic-addon1">자택 주소</span>
+                                                <div class="home_address">
+                                                    <span>
+                                                       <input type="text" id="home_postcode" placeholder="우편번호" aria-describedby="basic-addon1">
+                                                       <input type="button" onclick="home_addFind()" value="우편번호 찾기">
+                                                    </span>
+                                                    <input type="text" id="home_address" placeholder="주소" aria-describedby="basic-addon1">
+                                                    <input type="text" id="home_address2" placeholder="상세주소" aria-describedby="basic-addon1">
+                                                </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+
+                <!--/// 수정 완료 모달  ///-->
+                    <div class="modal" id="modiSuccess" role="dialog" aria-hidden="true" style="display:none; z-index: 1060;">
+                        <div class="modal-dialog" role="dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p>수정되었습니다.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal">확인</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!--/// 삭제 확인 모달  ///-->
+                    <div class="modal" id="delConfirm" role="dialog" aria-hidden="true" style="display:none; z-index: 1060;">
+                        <div class="modal-dialog" role="dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p>해당 정보를 삭제하시겠습니까?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default btn_delete">확인</button>
+                                <button class="btn btn-default btn_cancle" data-dismiss="modal">취소</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+</main>

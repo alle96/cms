@@ -1,0 +1,1168 @@
+<main class="manage_view">
+    <div class="manage-info">
+        <div class="top_modal">
+            <span>
+              <img src="imgs/manage_icon.png" alt="">
+                운영 관리
+            </span>
+
+            <div class="modal_btn offset-md-9 col-lg-8 col-xl-8 col-sm-8 col-xs-8">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">배너 미리보기</button>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">신규 등록</button>
+
+                <!-- 배너 미리보기 Modal -->
+                <div class="modal fade banner_modal" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+                            <!--Header-->
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">배너 미리보기</h4>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body">
+                                <h5>스시생 매장</h5>
+                                <!--파일추가 버튼-->
+                                <a data-toggle="modal" href="#myModal5" class="btn btn-primary">+파일추가</a>
+
+                                <div class="main_Banner">
+                                    <!-- 업로드 될 이미지 -->
+                                    <img src="imgs/banner0.jpg" alt="매장 이미지">
+                                    <!-- 이미지 없을 경우 -->
+                                    <!-- <img src="imgs/img_blank.gif" alt="업로드 된 이미지가 없습니다."> -->
+                                </div>
+
+                                <div class="sub_Banner">
+                                    <div class="sub01">
+                                        <div>
+                                            <span>메인</span>
+                                            <span class="remove_img">-</span>
+                                        </div>
+                                        <!-- 업로드 될 이미지 -->
+                                        <img src="imgs/banner1.gif" alt="메인 배너 이미지">
+                                        <!-- 이미지 없을 경우 -->
+                                        <!-- <img src="imgs/img_blank02.gif" alt="업로드 된 이미지가 없습니다."> -->
+                                    </div>
+                                    <div class="sub02">
+                                        <div>
+                                            <span>서브-1</span>
+                                            <span class="remove_img">-</span>
+                                        </div>
+                                        <!-- 업로드 될 이미지 -->
+                                        <img src="imgs/banner1.gif" alt="서브 배너 이미지1">
+                                        <!-- 이미지 없을 경우 -->
+                                        <!-- <img src="imgs/img_blank02.gif" alt="업로드 된 이미지가 없습니다."> -->
+                                    </div>
+                                    <div class="sub03">
+                                        <div>
+                                            <span>서브-2</span>
+                                            <span class="remove_img">-</span>
+                                        </div>
+                                        <!-- 업로드 될 이미지 -->
+                                        <img src="imgs/banner1.gif" alt="서브 배너 이미지2">
+                                        <!-- 이미지 없을 경우 -->
+                                        <!-- <img src="imgs/img_blank02.gif" alt="업로드 된 이미지가 없습니다."> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                <!--/배너 미리보기-->
+
+                <!-- 신규등록 Modal -->
+                    <div class="modal fade" id="myModal2" data-backdrop="static" data-keyboard="false" aria-hidden="true" style="display: none; z-index: 1050;">
+                    <div class="modal-dialog modal-lg myModal2">
+                        <!--Content-->
+                        <div class="modal-content">
+                            <!--Header-->
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">가맹점 신규 등록</h4>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body">
+                                <h3>띠용 서비스 신청서</h3>
+                                <div class="ask_upload">
+                                    <a data-toggle="modal" href="#myModal4" class="btn btn-secondary">신청서 업로드</a>
+                                </div>
+                                <div>
+                                    <span>위임서약</span>
+                                    <span>이하 담당자에게 띠용 계약서 관련 업무 권한 일체를 위임합니다.</span>
+                                    <div class="md-form input-group">
+                                        <span class="input-group-addon" id="basic-addon1">대표자: </span>
+                                        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+
+                                <form class="modal2_form">
+                                    <div class="form01">
+                                        <h4>기본 정보</h4>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">매장이름</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">사업자등록번호</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">매장주소</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form02">
+                                        <div class="md-form input-group shop_type">
+                                            <span class="input-group-addon" id="basic-addon1">매장유형</span>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a1">
+                                                <label for="checkbox_a1">브랜드 직영점</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a2">
+                                                <label for="checkbox_a2">브랜드 가맹점</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a3">
+                                                <label for="checkbox_a3">독립 자영업</label>
+                                            </fieldset>
+                                            <fieldset class="form-group text_box_add">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a4">
+                                                <label for="checkbox_a4">기타 (
+                                                    <input type="text" class="form-control" placeholder="기타사항 입력" aria-describedby="basic-addon1"><span>)</span>
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                        <div class="md-form input-group wi-fi">
+                                            <span class="input-group-addon" id="basic-addon1">무선 공유기</span>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a5">
+                                                <label for="checkbox_a5">있음</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a6">
+                                                <label for="checkbox_a6">없음</label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="form03">
+                                        <div class="md-form input-group wi-fi">
+                                            <span class="input-group-addon" id="basic-addon1">카테고리</span>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a7">
+                                                <label for="checkbox_a7">한식</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a8">
+                                                <label for="checkbox_a8">일식</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a9">
+                                                <label for="checkbox_a9">중식</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a10">
+                                                <label for="checkbox_a10">양식</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a11">
+                                                <label for="checkbox_a11">기타음식</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a12">
+                                                <label for="checkbox_a12">카페/디저트</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a13">
+                                                <label for="checkbox_a13">주류</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a14">
+                                                <label for="checkbox_a14">뷰티</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a15">
+                                                <label for="checkbox_a15">패션</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a16">
+                                                <label for="checkbox_a16">숙박</label>
+                                            </fieldset>
+                                            <fieldset class="form-group text_box_add">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a17">
+                                                <label for="checkbox_a17">기타업종 (
+                                                    <input type="text" class="form-control" placeholder="기타업종 입력" aria-describedby="basic-addon1"><span>)</span>
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="form01">
+                                        <h4>연락 정보</h4>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">매장전화</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="md-form input-group time_box">
+                                            <span class="input-group-addon" id="basic-addon1">영업시간</span>
+                                            <span class="day_box">평일</span>
+                                            <input type="time" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                            <span class="under_bar">-</span>
+                                            <input type="time" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                            <span class="day_box2">주말</span>
+                                            <input type="time" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                            <span class="under_bar2">-</span>
+                                            <input type="time" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form02">
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">대표자</span>
+                                            <input type="text" class="form-control" placeholder="이름" aria-describedby="basic-addon1">
+                                            <input type="text" class="form-control" placeholder="휴대전화" aria-describedby="basic-addon1">
+                                            <input type="text" class="form-control" placeholder="E-mail" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form03">
+                                        <div class="md-form input-group wi-fi day_off">
+                                            <span class="input-group-addon" id="basic-addon1">휴무일</span>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a18">
+                                                <label for="checkbox_a18">월</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a19">
+                                                <label for="checkbox_a19">화</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a20">
+                                                <label for="checkbox_a20">수</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a21">
+                                                <label for="checkbox_a21">목</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a22">
+                                                <label for="checkbox_a22">금</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a23">
+                                                <label for="checkbox_a23">토</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a24">
+                                                <label for="checkbox_a24">일</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a25">
+                                                <label for="checkbox_a25">공휴일</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a26">
+                                                <label for="checkbox_a26">없음</label>
+                                            </fieldset>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a27">
+                                                <label for="checkbox_a27">기타</label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="form01 form04">
+                                        <h4>계약정보</h4>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">영업담당자</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="md-form input-group c_banner">
+                                            <span class="input-group-addon" id="basic-addon1">상품(띠용)</span>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a28">
+                                                <label for="checkbox_a28">교환배너</label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="form02 form04 form05">
+                                        <div class="md-form input-group c_banner">
+                                            <span class="input-group-addon" id="basic-addon1">약정기간</span>
+                                            <fieldset class="form-group">
+                                                <input type="checkbox" class="filled-in" id="checkbox_a29">
+                                                <label for="checkbox_a29">1년</label>
+                                            </fieldset>
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">서비스비용</span>
+                                            <input type="text" class="form-control" placeholder="0원" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form03 contract_data">
+                                        <div class="md-form input-group textarea_meno">
+                                            <span class="input-group-addon" id="basic-addon1">자료</span>
+                                            <span class="bozo_text">
+                                              매장 이미지:2컷<br>
+                                              대표 상품이미지:10컷<br>
+                                              메뉴판이미지:1컷<br>
+                                              메인 상품이미지:1컷<br>
+                                              카피문구:15~20자 내외
+                                            </span>
+                                            <textarea type="text" class="form-control" placeholder="" aria-describedby="basic-addon1"></textarea>
+                                        </div>
+                                        <a data-toggle="modal" href="#myModal3" class="btn btn-primary">이미지 업로드</a>
+                                    </div>
+
+                                    <div class="form01">
+                                        <h4 class="title_css">계약자</h4>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">상호명</span>
+                                            <input type="text" class="form-control" placeholder="주식회사 예온커뮤니케이션" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">주소</span>
+                                            <input type="text" class="form-control" placeholder="서울시 강남구 도곡동518-7(논현로30길6) 2층" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">사업자등록번호</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">전화번호</span>
+                                            <input type="text" class="form-control" placeholder="02-1522-5920" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">대표이사</span>
+                                            <input type="text" class="form-control" placeholder="김정호" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">계좌번호</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form02 form06">
+                                        <h4 class="title_css">가입자</h4>
+                                        <p>본인은 상기 내용을 설명 받았고 이에 동의합니다.</p>
+
+                                        <div class="md-form input-group contract_input">
+                                            <span class="input-group-addon" id="basic-addon1">계약체결일</span>
+                                            <input type="date" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">신청자</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="md-form input-group">
+                                            <span class="input-group-addon" id="basic-addon1">서명</span>
+                                            <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+
+                                    <div class="logo_bottom">
+                                        <img src="imgs/logo.png" alt="띠용 로고">
+                                    </div>
+                                </form>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">등록하기</button>
+                                <button type="button" class="btn btn-primary">취소</button>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                <!--/신규등록-->
+            </div>
+        </div>
+    </div>
+
+    <!-- 신청서 업로드 Modal -->
+    <div class="modal fade imgUp_modal" id="myModal4" data-backdrop="static" data-keyboard="false" aria-hidden="true" style="z-index:1060;">
+        <div class="modal-dialog">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel2">신청서 업로드</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <div class="modal3_shop">
+                    <!-- 신청서 매장이름 = 올릴 위치 매장이름 -->
+                    <p>올릴 위치: <span class="shop_name">요기요</span>매장</p>
+                    <form enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input id="file-2" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+                        </div>
+                    </form>
+                  </div>
+                </div>
+                <!--Footer-->
+
+                <div class="modal-footer modal3_btn">
+                  <div class="close_check">
+                    <fieldset class="form-group">
+                        <input type="checkbox" class="filled-in" id="checkbox_a30">
+                        <label for="checkbox_a30">올리기 완료시 이 창을 닫음</label>
+                    </fieldset>
+                  </div>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /.Modal-->
+
+    <!-- 이미지 업로드 Modal -->
+    <div class="modal fade imgUp_modal" id="myModal3" data-backdrop="static" data-keyboard="false" aria-hidden="true" style="z-index:1060;">
+        <div class="modal-dialog">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">이미지 업로드</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <div class="modal3_shop">
+                    <!-- 신청서 매장이름 = 올릴 위치 매장이름 -->
+                    <p>올릴 위치: <span class="shop_name">요기요</span>매장</p>
+                    <form enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+                        </div>
+                    </form>
+                  </div>
+                </div>
+                <!--Footer-->
+
+                <div class="modal-footer modal3_btn">
+                  <div class="close_check">
+                    <fieldset class="form-group">
+                        <input type="checkbox" class="filled-in" id="checkbox_a31">
+                        <label for="checkbox_a31">올리기 완료시 이 창을 닫음</label>
+                    </fieldset>
+                  </div>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /.Modal-->
+
+    <!-- 배너 미리보기 -> 파일업로드 -->
+    <div class="modal fade imgUp_modal" id="myModal5" data-backdrop="static" data-keyboard="false" aria-hidden="true" style="z-index:1060;">
+        <div class="modal-dialog">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">이미지 업로드</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <div class="modal3_shop">
+                    <!-- 신청서 매장이름 = 올릴 위치 매장이름 -->
+                    <p>올릴 위치: <span class="shop_name">요기요</span>매장</p>
+                    <form enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+                        </div>
+                    </form>
+                  </div>
+                </div>
+                <!--Footer-->
+
+                <div class="modal-footer modal3_btn">
+                  <div class="close_check">
+                    <fieldset class="form-group">
+                        <input type="checkbox" class="filled-in" id="checkbox_a32">
+                        <label for="checkbox_a32">올리기 완료시 이 창을 닫음</label>
+                    </fieldset>
+                  </div>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /.배너 미리보기 -> 파일 업로드 Modal-->
+
+    <div class="select_option">
+        <select class="selectpicker show-tick">
+            <option>시 선택</option>
+            <option>미정</option>
+            <option>미정</option>
+        </select>
+        <select class="selectpicker show-tick">
+            <option>군/구 선택</option>
+            <option>미정</option>
+            <option>미정</option>
+        </select>
+        <select class="selectpicker show-tick">
+            <option>동 선택</option>
+            <option>미정</option>
+            <option>미정</option>
+        </select>
+
+        <select class="selectpicker show-tick">
+            <option>최신순</option>
+            <option>등록순</option>
+            <option>과거순</option>
+        </select>
+        <div class="md-form input-group">
+            <input type="search" class="form-control" placeholder="사업자 번호, 가맹점 명, ID중 선택입력">
+            <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="button">Go!</button>
+            </span>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>선택</th>
+                <th>No.</th>
+                <th>가맹점 명</th>
+                <th>가맹점 ID</th>
+                <th>사업자등록번호</th>
+                <th>업종(코드)</th>
+                <th>지역(구/동)</th>
+                <th>매장유형</th>
+                <th>등록일자</th>
+                <th>진행여부</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                    </fieldset>
+                </td>
+                <td>10</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox2">
+                        <label for="checkbox2"></label>
+                    </fieldset>
+                </td>
+                <td>9</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox3">
+                        <label for="checkbox3"></label>
+                    </fieldset>
+                </td>
+                <td>8</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox4">
+                        <label for="checkbox4"></label>
+                    </fieldset>
+                </td>
+                <td>7</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox5">
+                        <label for="checkbox5"></label>
+                    </fieldset>
+                </td>
+                <td>6</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox6">
+                        <label for="checkbox6"></label>
+                    </fieldset>
+                </td>
+                <td>5</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox7">
+                        <label for="checkbox7"></label>
+                    </fieldset>
+                </td>
+                <td>4</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox8">
+                        <label for="checkbox8"></label>
+                    </fieldset>
+                </td>
+                <td>3</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox9">
+                        <label for="checkbox9"></label>
+                    </fieldset>
+                </td>
+                <td>2</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox10">
+                        <label for="checkbox10"></label>
+                    </fieldset>
+                </td>
+                <td>1</td>
+                <td>스시생</td>
+                <td>01087664678</td>
+                <td>710-000-0000</td>
+                <td>요식(01)</td>
+                <td>강남구/양재</td>
+                <td>직영점</td>
+                <td>2016-12-18</td>
+                <td class="table_select">
+                    <select class="selectpicker show-tick">
+                        <option>이미지 제작중</option>
+                        <option>배너 진행</option>
+                        <option>중지</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="btn_box">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal6">수정</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal7">삭제</button>
+    </div>
+
+    <!-- 가맹점 정보 수정 Modal -->
+        <div class="modal fade" id="myModal6" data-backdrop="static" data-keyboard="false" aria-hidden="true" style="display: none; z-index: 1050;">
+        <div class="modal-dialog modal-lg myModal2">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">가맹점 신규 등록 수정</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <h3>띠용 서비스 신청서</h3>
+                    <div class="ask_upload">
+                        <a data-toggle="modal" href="#myModal4" class="btn btn-secondary">신청서 업로드</a>
+                    </div>
+                    <div>
+                        <span>위임서약</span>
+                        <span>이하 담당자에게 띠용 계약서 관련 업무 권한 일체를 위임합니다.</span>
+                        <div class="md-form input-group">
+                            <span class="input-group-addon" id="basic-addon1">대표자: </span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                    <form class="modal2_form">
+                        <div class="form01">
+                            <h4>기본 정보</h4>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">매장이름</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">사업자등록번호</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">매장주소</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <div class="form02">
+                            <div class="md-form input-group shop_type">
+                                <span class="input-group-addon" id="basic-addon1">매장유형</span>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a33">
+                                    <label for="checkbox_a33">브랜드 직영점</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a34">
+                                    <label for="checkbox_a34">브랜드 가맹점</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a35">
+                                    <label for="checkbox_a35">독립 자영업</label>
+                                </fieldset>
+                                <fieldset class="form-group text_box_add">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a36">
+                                    <label for="checkbox_a36">기타 (
+                                        <input type="text" class="form-control" placeholder="기타사항 입력" aria-describedby="basic-addon1"><span>)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                            <div class="md-form input-group wi-fi">
+                                <span class="input-group-addon" id="basic-addon1">무선 공유기</span>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a37">
+                                    <label for="checkbox_a37">있음</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a38">
+                                    <label for="checkbox_a38">없음</label>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="form03">
+                            <div class="md-form input-group wi-fi">
+                                <span class="input-group-addon" id="basic-addon1">카테고리</span>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a39">
+                                    <label for="checkbox_a39">한식</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a40">
+                                    <label for="checkbox_a40">일식</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a41">
+                                    <label for="checkbox_a41">중식</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a42">
+                                    <label for="checkbox_a42">양식</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a43">
+                                    <label for="checkbox_a43">기타음식</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a44">
+                                    <label for="checkbox_a44">카페/디저트</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a45">
+                                    <label for="checkbox_a45">주류</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a46">
+                                    <label for="checkbox_a46">뷰티</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a47">
+                                    <label for="checkbox_a47">패션</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a48">
+                                    <label for="checkbox_a48">숙박</label>
+                                </fieldset>
+                                <fieldset class="form-group text_box_add">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a49">
+                                    <label for="checkbox_a49">기타업종 (
+                                        <input type="text" class="form-control" placeholder="기타업종 입력" aria-describedby="basic-addon1"><span>)</span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="form01">
+                            <h4>연락 정보</h4>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">매장전화</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="md-form input-group time_box">
+                                <span class="input-group-addon" id="basic-addon1">영업시간</span>
+                                <span class="day_box">평일</span>
+                                <input type="time" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                <span class="under_bar">-</span>
+                                <input type="time" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                <span class="day_box2">주말</span>
+                                <input type="time" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                                <span class="under_bar2">-</span>
+                                <input type="time" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <div class="form02">
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">대표자</span>
+                                <input type="text" class="form-control" placeholder="이름" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="휴대전화" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="E-mail" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <div class="form03">
+                            <div class="md-form input-group wi-fi day_off">
+                                <span class="input-group-addon" id="basic-addon1">휴무일</span>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a50">
+                                    <label for="checkbox_a50">월</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a51">
+                                    <label for="checkbox_a51">화</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a52">
+                                    <label for="checkbox_a52">수</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a53">
+                                    <label for="checkbox_a53">목</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a54">
+                                    <label for="checkbox_a54">금</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a55">
+                                    <label for="checkbox_a55">토</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a56">
+                                    <label for="checkbox_a56">일</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a57">
+                                    <label for="checkbox_a57">공휴일</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a58">
+                                    <label for="checkbox_a58">없음</label>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a59">
+                                    <label for="checkbox_a59">기타</label>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="form01 form04">
+                            <h4>계약정보</h4>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">영업담당자</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="md-form input-group c_banner">
+                                <span class="input-group-addon" id="basic-addon1">상품(띠용)</span>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a60">
+                                    <label for="checkbox_a60">교환배너</label>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="form02 form04 form05">
+                            <div class="md-form input-group c_banner">
+                                <span class="input-group-addon" id="basic-addon1">약정기간</span>
+                                <fieldset class="form-group">
+                                    <input type="checkbox" class="filled-in" id="checkbox_a61">
+                                    <label for="checkbox_a61">1년</label>
+                                </fieldset>
+                            </div>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">서비스비용</span>
+                                <input type="text" class="form-control" placeholder="0원" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <div class="form03 contract_data">
+                            <div class="md-form input-group textarea_meno">
+                                <span class="input-group-addon" id="basic-addon1">자료</span>
+                                <span class="bozo_text">
+                                  매장 이미지:2컷<br>
+                                  대표 상품이미지:10컷<br>
+                                  메뉴판이미지:1컷<br>
+                                  메인 상품이미지:1컷<br>
+                                  카피문구:15~20자 내외
+                                </span>
+                                <textarea type="text" class="form-control" placeholder="" aria-describedby="basic-addon1"></textarea>
+                            </div>
+                            <a data-toggle="modal" href="#myModal3" class="btn btn-primary">이미지 업로드</a>
+                        </div>
+
+                        <div class="form01">
+                            <h4 class="title_css">계약자</h4>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">상호명</span>
+                                <input type="text" class="form-control" placeholder="주식회사 예온커뮤니케이션" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">주소</span>
+                                <input type="text" class="form-control" placeholder="서울시 강남구 도곡동518-7(논현로30길6) 2층" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">사업자등록번호</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">전화번호</span>
+                                <input type="text" class="form-control" placeholder="02-1522-5920" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">대표이사</span>
+                                <input type="text" class="form-control" placeholder="김정호" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">계좌번호</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <div class="form02 form06">
+                            <h4 class="title_css">가입자</h4>
+                            <p>본인은 상기 내용을 설명 받았고 이에 동의합니다.</p>
+
+                            <div class="md-form input-group contract_input">
+                                <span class="input-group-addon" id="basic-addon1">계약체결일</span>
+                                <input type="date" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">신청자</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="md-form input-group">
+                                <span class="input-group-addon" id="basic-addon1">서명</span>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <div class="logo_bottom">
+                            <img src="imgs/logo.png" alt="띠용 로고">
+                        </div>
+                    </form>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">수정하기</button>
+                    <button type="button" class="btn btn-primary">취소</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--/가맹점 정보 수정-->
+
+    <!-- 삭제 클릭시 Modal -->
+    <div class="modal fade delete_md" id="myModal7" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <p>해당 정보를 삭제하시겠습니까?</p>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">확인</button>
+                    <button type="button" class="btn btn-primary">취소</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--/삭제-->
+
+    <!--pagination-->
+    <nav class="pagi_nav">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</main>
+<!--/Main layout-->

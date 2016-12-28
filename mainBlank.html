@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.6.1">
+  <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-fileinput/css/fileinput.min.css"><!--file-->
+
+  <link rel="stylesheet" href="css/good.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/manage.css">
+  <link rel="stylesheet" href="css/inquire.css">
+  <link rel="stylesheet" href="css/admin.css">
+
+  <title>띠용 본사 CMS</title>
+</head>
+<body class="fixed-sn grey-skin">
+
+  <!--Double navigation-->
+  <header class="main_header">
+      <!-- Sidebar navigation -->
+      <ul id="slide-out" class="side-nav fixed custom-scrollbar">
+
+          <!-- Logo -->
+          <li>
+              <div class="logo-wrapper waves-light">
+                  <a href="main.html"><img src="imgs/logo_admin.png" class="img-fluid flex-center"></a>
+              </div>
+          </li>
+          <!--/. Logo -->
+
+          <!--member_info-->
+          <div class="member_info">
+              <img src="imgs/profile.gif" alt="사원 프로필 사진" class="rounded-circle">
+              <p>ID : ddiyoung</p>
+              <p>담당자 : 띠요옹</p>
+          </div>
+
+          <!--Search Form-->
+          <li>
+              <form class="search-form" role="search">
+                  <div class="form-group waves-light">
+                      <input type="text" class="form-control" placeholder="가맹점 검색 ..">
+                  </div>
+              </form>
+          </li>
+          <!--/.Search Form-->
+
+          <!-- Side navigation links -->
+          <li>
+              <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-bullhorn" aria-hidden="true"></i>본사 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#" class="waves-effect">팀룸</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">일정관리</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">본사 공지사항</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-home" aria-hidden="true"></i>가맹점 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="manage.html" class="waves-effect">운영 관리</a>
+                              </li>
+                              <li><a href="inquire.html" class="waves-effect">문의 관리</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-edit" aria-hidden="true"></i>재고 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#" class="waves-effect">입고 관리</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">출고 관리</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-pie-chart" aria-hidden="true"></i>통계 관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="#" class="waves-effect">매장별 노출 통계</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">지역별 노출 통계</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">기간별 노출 통계</a>
+                              </li>
+                              <li><a href="#" class="waves-effect">업종별 노출 통계</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-user-plus" aria-hidden="true"></i>admin관리<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li><a href="admin.html" class="waves-effect">등록 관리</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </li>
+          <!--/. Side navigation links -->
+
+      </ul>
+      <!--/. Sidebar navigation -->
+
+      <!--Navbar-->
+      <nav class="navbar navbar-fixed-top scrolling-navbar double-nav">
+
+          <!-- SideNav slide-out button -->
+          <div class="pull-left">
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+          </div>
+
+          <!-- Breadcrumb-->
+          <div class="breadcrumb-dn">
+              <!--<p>Breadcrumb or page title</p>-->
+          </div>
+
+          <ul class="nav navbar-nav pull-right">
+              <li class="nav-item ">
+                  <a class="nav-link"><i class="fa fa-bell" aria-hidden="true"></i> <span class="hidden-sm-down">알람</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link"><i class="fa fa-sign-out" aria-hidden="true"></i> <span class="hidden-sm-down">로그아웃</span></a>
+              </li>
+          </ul>
+
+      </nav>
+      <!--/.Navbar-->
+
+  </header>
+  <!--/Double navigation-->
+
+  <!--Main layout-->
+  <main class="main_view">
+      <div class="container-fluid">
+
+          <!--Panel 가입 현황 -->
+          <div class="card text-xs-center white">
+              <div class="card_icon">
+                  <img src="imgs/join_icon.png" alt="" class="rounded-circle">
+              </div>
+              <div class="num_text">
+                  <p class="card-text"><span>가입 현황&nbsp;&nbsp;</span> Today <strong class="today01">28</strong></p>
+                  <p class="card-text">TOTAL 100000</p>
+              </div>
+          </div>
+          <!--/.Panel 가입 현황 -->
+
+          <!--Panel 제휴 현황 -->
+          <div class="card text-xs-center white">
+              <div class="card_icon">
+                  <img src="imgs/hand_icon.png" alt="" class="rounded-circle">
+              </div>
+              <div class="num_text">
+                  <p class="card-text"><span>제휴 현황&nbsp;&nbsp;</span> Today <strong class="today02">3</strong></p>
+                  <p class="card-text">TOTAL 100000</p>
+              </div>
+          </div>
+          <!--/.Panel 제휴 현황 -->
+
+          <!--Panel 문의 현황 -->
+          <div class="card text-xs-center white">
+              <div class="card_icon">
+                  <img src="imgs/phone_icon.png" alt="" class="rounded-circle">
+              </div>
+              <div class="num_text">
+                  <p class="card-text"><span>문의 현황&nbsp;&nbsp;</span> Today <strong class="today03">17</strong></p>
+                  <p class="card-text">TOTAL 100000</p>
+              </div>
+          </div>
+          <!--/.Panel 문의 현황 -->
+
+          <!--chart1 -->
+          <div class="chart01">
+            <div class="card02">
+              <canvas id="myChart" style="width:100%; height:auto;"></canvas>
+            </div>
+            <div class="card02">
+              <canvas id="myChart2" style="width:100%; height:auto;"></canvas>
+            </div>
+          </div>
+          <!--/.chart1 -->
+
+          <div class="title_rigCard">
+            띠용 팀룸
+          </div>
+
+          <!--팀룸-->
+          <div class="team-note teamRoom swiper-container swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card card-block">
+                    <!-- 게시글이 없을 경우 -->
+                    <img src="imgs/blank_img1.gif" alt="현재 등록된 게시글이 없습니다">
+                </div>
+                <!--팀룸2-->
+                <div class="card card-block">
+                  <!-- 게시글이 없을 경우 -->
+                  <img src="imgs/blank_img1.gif" alt="현재 등록된 게시글이 없습니다">
+                </div>
+              </div>
+              <!-- slide01 -->
+            </div>
+            <!-- 등록된 게시글이 없을 경우 화면에 보여지지 않습니다 -->
+            <!-- <div class="swiper-pagination swiper-pagination1"></div> -->
+          </div>
+          <!--/팀룸-->
+
+          <!--chart2 -->
+          <div class="chart02">
+            <div>
+              <canvas id="myChart3" style="width:100%; height:auto;"></canvas>
+            </div>
+            <div>
+              <div>
+                <span class="min-chart" id="chart-sales" data-percent="56"><span class="percent"></span></span>
+                <h5><span class="label green">Sales <i class="fa fa-arrow-circle-up"></i></span></h5>
+              </div>
+              <div>
+                <span class="min-chart min-chart2" id="chart-sales2" data-percent="56"><span class="percent"></span></span>
+                <h5><span class="label green">Sales <i class="fa fa-arrow-circle-up"></i></span></h5>
+              </div>
+              <div>
+                <span class="min-chart min-chart3" id="chart-sales3" data-percent="56"><span class="percent"></span></span>
+                <h5><span class="label green">Sales <i class="fa fa-arrow-circle-up"></i></span></h5>
+              </div>
+            </div>
+          </div>
+          <!--/.chart2 -->
+
+          <!--본사 공지사항-->
+          <div class="team-note teamRoom swiper-container swiper2">
+            <div class="title_rigCard rigCard2">
+              본사 공지사항
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card card-block">
+                  <!-- 게시글이 없을 경우 -->
+                  <img src="imgs/blank_img2.gif" alt="현재 등록된 게시글이 없습니다">
+                </div>
+                <!--팀룸2-->
+                <div class="card card-block">
+                  <!-- 게시글이 없을 경우 -->
+                  <img src="imgs/blank_img2.gif" alt="현재 등록된 게시글이 없습니다">
+                </div>
+              </div>
+              <!-- slide01 -->
+            </div>
+            <!-- 등록된 게시글이 없을 경우 화면에 보여지지 않습니다 -->
+            <!-- <div class="swiper-pagination swiper-pagination2"></div> -->
+          </div>
+          <!--/팀룸-->
+      </div>
+  </main>
+  <!--/Main layout-->
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://mdbootstrap.com/live/_MDB/js/tether.min.js"></script>
+  <script src="http://mdbootstrap.com/live/_MDB/js/bootstrap.min.js"></script>
+  <script src="http://mdbootstrap.com/live/_MDB/js/mdb.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+  <script src="bower_components/bootstrap-fileinput/js/fileinput.min.js" ></script>
+  <script src="bower_components/swiper/dist/js/swiper.min.js" ></script>
+  <script src="../dist/js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  // 메인header skin
+  $(".button-collapse").sideNav();
+  // Custom scrollbar init
+  var el = document.querySelector('.custom-scrollbar');
+  Ps.initialize(el);
+
+  // top_chart1
+  $(function () {
+    var option = {
+    responsive: true,
+    };
+
+    // Get the context of the canvas element we want to select
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myLineChart = new Chart(ctx).Line(data, option); //'Line' defines type of the chart.
+  });
+
+  $(function () {
+    var data = {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 80, 81, 56, 55, 40]
+        },
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 86, 27, 90]
+        }
+        ]
+    };
+
+      //top_chart2
+      var option = {
+        responsive: true,
+        };
+
+        // Get the context of the canvas element we want to select
+        var ctx = document.getElementById("myChart2").getContext('2d');
+        var myRadarChart = new Chart(ctx).Radar(data, option); //'Line' defines type of the chart.
+      });
+
+    var data = {
+        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+        datasets: [
+            {
+                label: "My First dataset",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [65, 59, 90, 81, 56, 55, 40]
+            },
+            {
+                label: "My Second dataset",
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [28, 48, 40, 19, 96, 27, 100]
+            }
+        ]
+    };
+
+    // bottom_chart1
+    $(function () {
+        var option = {
+        responsive: true,
+        };
+
+        // Get the context of the canvas element we want to select
+        var ctx = document.getElementById("myChart3").getContext('2d');
+        var myBarChart = new Chart(ctx).Bar(data, option); //'Line' defines type of the chart.
+    });
+
+    var data = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+            {
+                label: "My First dataset",
+                fillColor: "rgba(220,220,220,0.5)",
+                strokeColor: "rgba(220,220,220,0.8)",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)",
+                data: [65, 59, 80, 81, 56, 55, 40]
+            },
+            {
+                label: "My Second dataset",
+                fillColor: "rgba(151,187,205,0.5)",
+                strokeColor: "rgba(151,187,205,0.8)",
+                highlightFill: "rgba(151,187,205,0.75)",
+                highlightStroke: "rgba(151,187,205,1)",
+                data: [28, 48, 40, 19, 86, 27, 90]
+            }
+        ]
+    };
+
+    // chart2
+    $(function () {
+        $('.min-chart#chart-sales').easyPieChart({
+            barColor: "#fc8c74",
+            onStep: function (from, to, percent) {
+                $(this.el).find('.percent').text(Math.round(percent));
+            }
+        });
+        $('.min-chart2#chart-sales2').easyPieChart({
+            barColor: "#86dada",
+            onStep: function (from, to, percent) {
+                $(this.el).find('.percent').text(Math.round(percent));
+            }
+        });
+        $('.min-chart3#chart-sales3').easyPieChart({
+            barColor: "#92bbd9",
+            onStep: function (from, to, percent) {
+                $(this.el).find('.percent').text(Math.round(percent));
+            }
+        });
+    });
+
+    // 메인페이지 팀룸 슬라이더
+    var swiper = new Swiper('.swiper1', {
+        pagination: '.swiper-pagination1',
+        paginationClickable: true
+    });
+
+    // 메인페이지 공지사항 슬라이더
+    var swiper = new Swiper('.swiper2', {
+        pagination: '.swiper-pagination2',
+        paginationClickable: true
+    });
+
+
+
+  </script>
+
+
+</body>
+</html>

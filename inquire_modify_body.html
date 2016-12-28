@@ -1,0 +1,198 @@
+<main class="manage_view inquire_view">
+    <div class="manage-info">
+        <div class="top_modal">
+            <span>
+              <img src="imgs/manage_icon.png" alt="">
+                문의 관리
+            </span>
+        </div>
+    </div>
+
+    <div class="select_option">
+        <select class="selectpicker show-tick">
+            <option>최신순</option>
+            <option>등록순</option>
+            <option>과거순</option>
+        </select>
+        <div class="md-form input-group">
+            <input type="search" class="form-control" placeholder="사업자 번호, 가맹점 명, ID중 선택입력">
+            <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="button">Go!</button>
+            </span>
+        </div>
+    </div>
+
+    <!--toggle 게시판(문의관리)-->
+    <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+        <!--First panel-->
+        <div class="panel panel-default">
+            <!--Panel heading-->
+            <div class="thead">
+              <div class="delete">삭제</div>
+              <div class="number">No.</div>
+              <div class="target_name">매장이름</div>
+              <div class="area_locate">지역(구/동)</div>
+              <div class="phone">휴대전화번호</div>
+              <div class="category">업종</div>
+              <div class="inquire_note">문의내용</div>
+              <div class="sign_up">등록일자</div>
+            </div>
+            <!-- 내용 no.8 -->
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h5 class="panel-title">
+                  <div class="choice">
+                    <fieldset class="form-group">
+                        <input type="checkbox" id="checkbox_b1">
+                        <label for="checkbox_b1"></label>
+                    </fieldset>
+                  </div>
+                  <a class="arrow-r arrow-r1" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span class="number0">
+                      10
+                    </span>
+                    <span class="target_name0">
+                      스시생
+                    </span>
+                    <span class="area_locate0">
+                      강남구/양재
+                    </span>
+                    <span class="phone0">
+                      000-0000-0000
+                    </span>
+                    <span class="category0">
+                      호프집
+                    </span>
+                    <span class="inquire_note0">
+                      띠용과 제휴하고 싶습니다. 히힛:) 띠용과 제휴하고 싶습니다.
+                      띠용과 제휴하고 싶습니다.띠용과 제휴하고 싶습니다.
+                    </span>
+                    <span class="sign_up0">
+                      2016-12-19
+                    </span>
+                    <i class="fa fa-angle-down rotate-icon"></i>
+                  </a>
+                </h5>
+            </div>
+
+            <!-- 수정 버튼 클릭시 (변경부분 주석 처리 해놓았습니다.) -->
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="content_box">
+                <div class="header">
+                  <div class="md-form input-group">
+                    <span class="input-group-addon" id="basic-addon1">매장이름</span>
+
+                    <!-- span에서 input태그로 변경됩니다.  -->
+                    <!-- <span class="inq_text">스시생</span> -->
+                    <input type="text" class="form-control" placeholder="매장이름을 입력해주세요" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="day_set">
+                    등록일 : 2016-12-19
+                  </div>
+                </div>
+
+                <div class="header_info">
+                  <div class="md-form input-group">
+                    <span class="input-group-addon" id="basic-addon1">휴대전화번호</span>
+                    <!-- span에서 input태그로 변경됩니다.  -->
+                    <!-- <span class="inq_text">000-0000-0000</span> -->
+                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="md-form input-group">
+                    <span class="input-group-addon" id="basic-addon1">지역(구/동)</span>
+                    <!-- span에서 input태그로 변경됩니다.  -->
+                    <!-- <span class="inq_text">강남구/양재</span> -->
+                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="md-form input-group">
+                    <span class="input-group-addon" id="basic-addon1">업종</span>
+                    <!-- span에서 input태그로 변경됩니다.  -->
+                    <!-- <span class="inq_text">호프집</span> -->
+                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+
+                <div class="shop_note">
+                  <span>문의 내용</span>
+                    <!-- p태그 대신 div가 추가됩니다. -->
+                    <div class="form-group">
+                      <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
+                    </div>
+                  <span>상담 내용</span>
+                    <!-- p태그 대신 div가 추가됩니다. -->
+                    <div class="form-group">
+                      <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="mid_button">
+                  <button type="button" class="btn btn-primary">인쇄</button>
+                  <a href="inquire_modify.html" class="btn btn-primary">수정</a>
+                  <button type="button" class="btn btn-primary">확인</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/.Second pane2-->
+        </div>
+        <!--/.all panel-->
+      </div>
+
+    <div class="btn_box">
+        <!-- <button type="button" class="btn btn-primary">수정</button> -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal9">삭제</button>
+    </div>
+
+    <!-- 삭제 클릭시 Modal -->
+    <div class="modal fade delete_md" id="myModal9" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- <h4 class="modal-title" id="myModalLabel">배너 미리보기</h4> -->
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <p>해당 정보를 삭제하시겠습니까?</p>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">확인</button>
+                    <button type="button" class="btn btn-primary">취소</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--/삭제-->
+
+    <!--pagination-->
+    <nav class="pagi_nav">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</main>

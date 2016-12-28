@@ -1,0 +1,123 @@
+<main class="main_view">
+    <div class="container-fluid">
+
+        <!--Panel 가입 현황 -->
+        <div class="card text-xs-center white">
+            <div class="card_icon">
+                <img src="imgs/join_icon.png" alt="" class="rounded-circle">
+            </div>
+            <div class="num_text">
+                <p class="card-text"><span>가입 현황&nbsp;&nbsp;</span> Today <strong class="today01">28</strong></p>
+                <p class="card-text">TOTAL 100000</p>
+            </div>
+        </div>
+        <!--/.Panel 가입 현황 -->
+
+        <!--Panel 제휴 현황 -->
+        <div class="card text-xs-center white">
+            <div class="card_icon">
+                <img src="imgs/hand_icon.png" alt="" class="rounded-circle">
+            </div>
+            <div class="num_text">
+                <p class="card-text"><span>제휴 현황&nbsp;&nbsp;</span> Today <strong class="today02">3</strong></p>
+                <p class="card-text">TOTAL 100000</p>
+            </div>
+        </div>
+        <!--/.Panel 제휴 현황 -->
+
+        <!--Panel 문의 현황 -->
+        <div class="card text-xs-center white">
+            <div class="card_icon">
+                <img src="imgs/phone_icon.png" alt="" class="rounded-circle">
+            </div>
+            <div class="num_text">
+                <p class="card-text"><span>문의 현황&nbsp;&nbsp;</span> Today <strong class="today03">17</strong></p>
+                <p class="card-text">TOTAL 100000</p>
+            </div>
+        </div>
+        <!--/.Panel 문의 현황 -->
+
+        <!--chart1 -->
+        <div class="chart01">
+          <div class="card02">
+            <canvas id="myChart" style="width:100%; height:auto;"></canvas>
+          </div>
+          <div class="card02">
+            <canvas id="myChart2" style="width:100%; height:auto;"></canvas>
+          </div>
+        </div>
+        <!--/.chart1 -->
+
+        <div class="title_rigCard">
+          띠용 팀룸
+        </div>
+
+        <!--팀룸-->
+        <div class="team-note teamRoom swiper-container swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card card-block">
+                  <!-- 게시글이 없을 경우 -->
+                  <img src="imgs/blank_img1.gif" alt="현재 등록된 게시글이 없습니다">
+              </div>
+              <!--팀룸2-->
+              <div class="card card-block">
+                <!-- 게시글이 없을 경우 -->
+                <img src="imgs/blank_img1.gif" alt="현재 등록된 게시글이 없습니다">
+              </div>
+            </div>
+            <!-- slide01 -->
+          </div>
+          <!-- 등록된 게시글이 없을 경우 화면에 보여지지 않습니다 -->
+          <!-- <div class="swiper-pagination swiper-pagination1"></div> -->
+        </div>
+        <!--/팀룸-->
+
+        <!--chart2 -->
+        <div class="chart02">
+          <div>
+            <canvas id="myChart3" style="width:100%; height:auto;"></canvas>
+          </div>
+          <div>
+            <div>
+              <span class="min-chart" id="chart-sales" data-percent="56"><span class="percent"></span></span>
+              <h5><span class="label green">Sales <i class="fa fa-arrow-circle-up"></i></span></h5>
+            </div>
+            <div>
+              <span class="min-chart min-chart2" id="chart-sales2" data-percent="56"><span class="percent"></span></span>
+              <h5><span class="label green">Sales <i class="fa fa-arrow-circle-up"></i></span></h5>
+            </div>
+            <div>
+              <span class="min-chart min-chart3" id="chart-sales3" data-percent="56"><span class="percent"></span></span>
+              <h5><span class="label green">Sales <i class="fa fa-arrow-circle-up"></i></span></h5>
+            </div>
+          </div>
+        </div>
+        <!--/.chart2 -->
+
+        <!--본사 공지사항-->
+        <div class="team-note teamRoom swiper-container swiper2">
+          <div class="title_rigCard rigCard2">
+            본사 공지사항
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card card-block">
+                <!-- 게시글이 없을 경우 -->
+                <img src="imgs/blank_img2.gif" alt="현재 등록된 게시글이 없습니다">
+              </div>
+              <!--팀룸2-->
+              <div class="card card-block">
+                <!-- 게시글이 없을 경우 -->
+                <img src="imgs/blank_img2.gif" alt="현재 등록된 게시글이 없습니다">
+              </div>
+            </div>
+            <!-- slide01 -->
+          </div>
+          <!-- 등록된 게시글이 없을 경우 화면에 보여지지 않습니다 -->
+          <!-- <div class="swiper-pagination swiper-pagination2"></div> -->
+        </div>
+        <!--/팀룸-->
+    </div>
+</main>
+<!--/Main layout-->

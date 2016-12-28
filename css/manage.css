@@ -1,0 +1,602 @@
+.manage-info>.top_modal {
+    position:relative;
+    margin-top:20px;
+}
+.manage-info .modal_btn {
+    margin-left:0;
+    position:absolute;
+    top:0;
+    right:0;
+    text-align:right;
+    padding-right:0;
+}
+.manage-info>.top_modal>span {
+    display:block;
+    width:150px;
+    height:50px;
+    line-height:50px;
+    text-indent:10px;
+    background:#648ca5;
+    border-radius:5px;
+    color:#fff;
+    font-size:14px;
+}
+.manage-info>.top_modal>span>img {
+    vertical-align:middle;
+    width:25px;
+    margin:-3px 5px 0 15px;
+}
+/* select */
+.manage_view .dropdown-toggle::after {
+    content:none;
+}
+.manage_view .select_option {
+    margin-top:100px;
+}
+.select_option .input-group {
+    position:relative;
+    width:25%;
+    float:right;
+    margin-top:-5px;
+}
+.select_option .input-group .form-control {
+    position:relative;
+}
+.select_option .input-group .input-group-btn {
+    width:30px;
+}
+.select_option .input-group .input-group-btn>.btn {
+    position:absolute;
+    top:0;
+    right:0;
+}
+.select_option .input-group .md-form>intup {
+  font-size:14px;
+}
+.select_option .btn-group>.btn:first-child {
+    height:45px;
+}
+/*teble*/
+.manage_view .table {
+    margin-top:50px;
+    margin-bottom:0;
+    border-bottom:1px solid #ccc;
+    background:#fff;
+}
+.table>thead>tr {
+    background-color:#f9f9f9;
+}
+.table>thead>tr>th {
+  text-align: center;
+}
+.manage_view .table>tbody>tr>td {
+    font-size:14px;
+    line-height:25px;
+    text-align: center;
+}
+.grey-skin tbody input[type=checkbox]:checked+label:before {
+  left:4px;
+  top:-11px;
+}
+[type=checkbox]+label:before {
+    top:-7px;
+    left:9px;
+}
+/*하단 버튼*/
+.manage_view .btn_box {
+    text-align:right;
+    margin-top:30px;
+}
+/*pagination*/
+.manage_view .pagi_nav {
+    text-align: center;
+    margin-top:-60px;
+}
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+    background-color:#fc322c;
+    border-color:#fc322c;
+}
+.manage_view .pagi_nav a {
+    color:#333;
+}
+/*배너 미리보기 modal*/
+#myModal {
+    margin-top:150px;
+}
+.banner_modal .modal-body {
+    overflow:hidden;
+}
+.banner_modal .modal-header>h4 {
+    text-align:left;
+    font-size:14px;
+}
+.banner_modal .modal-body>h5 {
+    text-align:left;
+    margin-top:10px;
+    font-weight:700;
+}
+.banner_modal .modal-body>a {
+  margin-top:-30px;
+}
+.banner_modal {
+    width:95%;
+    margin:30px auto 0;
+}
+.banner_modal .modal-body .main_Banner {
+    margin-top:18px;
+    margin-bottom:10px;
+}
+.banner_modal .modal-body .main_Banner>img {
+    width:100%;
+}
+.banner_modal .modal-body .sub_Banner>div {
+    float:left;
+    width:32%;
+    margin-right:2%;
+}
+.banner_modal .modal-body .sub_Banner>.sub03 {
+    margin-right:0;
+}
+.banner_modal .modal-body .sub_Banner>div {
+    position:relative;
+}
+.banner_modal .modal-body .sub_Banner>div>img {
+    width:100%;
+}
+.banner_modal .modal-body .sub_Banner>div span:first-of-type {
+    display:inline-block;
+    padding:3px 15px;
+    background-color:#565d6b;
+    border-radius:15px;
+    color:#fff;
+    font-size:12px;
+    position:absolute;
+    top:-10px;
+    left:0;
+    font-weight:300;
+}
+.banner_modal .modal-body .sub_Banner>div span:last-of-type {
+    padding:0 10px;
+    background-color:#fc322c;
+    border-radius:5px;
+    position:absolute;
+    top:-10px;
+    right:0;
+    color:#fff;
+    cursor:pointer;
+}
+/*가맹점 신규 등록 modal*/
+.myModal2 {
+    margin-top:50px;
+}
+.myModal2 input {
+  font-size:13px;
+}
+.modal2_form {
+    overflow: hidden;
+}
+.myModal2 .modal-content .modal-header>h4 {
+    text-align: left;
+    font-size:14px;
+}
+.myModal2 .modal-body>h3 {
+    text-align: center;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:14px;
+}
+.myModal2 .modal-body .input-group>input {
+    margin-top:3px;
+    height:20px;
+    padding:3px 10px;
+}
+.myModal2 .modal-body>div:nth-of-type(2) {
+    overflow: hidden;
+    border-top:1px solid #333;
+    border-bottom:1px solid #333;
+    height:50px;
+}
+.myModal2 .modal-body>div>span {
+    float:left;
+    font-size:13px;
+    line-height:50px;
+}
+.myModal2 .modal-body>div>span:first-of-type {
+    text-indent:12px;
+    margin-right:100px;
+}
+.myModal2 .modal2_form>div>h4, .title_css {
+    text-align: left;
+    font-weight:700;
+    margin:20px 0 10px 12px;
+}
+.myModal2 .form01 {
+    float:left;
+    width:43%;
+    margin-right:4%;
+}
+.myModal2 .form01>div {
+    margin-bottom:5px;
+}
+.myModal2 div>span.input-group-addon {
+    width:110px;
+    font-size:12px;
+    text-align:left;
+}
+.myModal2 .form02 {
+    float:left;
+    width:53%;
+    margin-top:47px;
+}
+.myModal2 .form02>.md-form {
+    height:50px;
+}
+.myModal2 .form02>.shop_type>fieldset {
+    float:left;
+    margin-left:10px;
+}
+.myModal2 .form02>.shop_type>fieldset:nth-of-type(2) {
+    margin-left:25px;
+}
+.myModal2 .form02>.shop_type>fieldset:nth-of-type(4) {
+    margin-left:37px;
+}
+.myModal2 .form02>.shop_type>fieldset>input {
+    vertical-align: middle;
+}
+.myModal2 div [type=checkbox]+label {
+    font-size:12px;
+}
+.myModal2 .form02>.shop_type>span.input-group-addon {
+    height:70px;
+}
+.myModal2 .form02>div {
+    margin-bottom:5px;
+}
+.myModal2 .form02>.wi-fi>.form-group {
+    text-align:left;
+    margin-left:10px;
+    float:left;
+}
+.myModal2 .form02>.wi-fi>.form-group:first-of-type {
+    margin-right:67px;
+}
+.myModal2 .form03 .form-group {
+    float:left;
+    margin-left:10px;
+    margin-right:45px;
+}
+.myModal2 .form03>.textarea_meno {
+  height:80px;
+}
+.myModal2 .form03>.textarea_meno>.bozo_text {
+  display:block;
+  position: absolute;
+  font-size:11px;
+  /*text-algin:left;*/
+  padding-left:5px;
+  color:#ccc;
+  text-align:left;
+}
+.myModal2 .form03>.textarea_meno textarea {
+  width:65%;
+  height:83px;
+  margin-left:140px;
+}
+.myModal2 .form01 .time_box {
+    position:relative;
+}
+.myModal2 .form01 .time_box>input {
+    width:30%;
+    float:left;
+    margin-left:40px;
+}
+.myModal2 .form01 .time_box>input:nth-of-type(2),
+.myModal2 .form01 .time_box>input:nth-of-type(4) {
+    margin-left:25px;
+}
+.myModal2 .form01 .time_box>span.day_box,
+.myModal2 .form01 .time_box>span.day_box2 {
+    position:absolute;
+    top:6px;
+    left:32%;
+    font-size:12px;
+}
+.myModal2 .form01 .time_box>span.day_box2 {
+    top:35px;
+}
+.myModal2 .form01 .time_box>span.under_bar,
+.myModal2 .form01 .time_box>span.under_bar2 {
+    position:absolute;
+    top:3px;
+    left:69%;
+}
+.myModal2 .form01 .time_box>span.under_bar2 {
+    top:35px;
+}
+.myModal2 .form03 .day_off .form-group:nth-of-type(8) {
+    margin-right:21px;
+}
+.myModal2 .form03 .day_off .form-group:nth-of-type(9) {
+    margin-right:33px;
+}
+.myModal2 .form04>.c_banner>.form-group {
+    float:left;
+    margin-left:10px;
+}
+.myModal2 .form05 {
+    height:40px;
+}
+.myModal2 .form05>div {
+    height:auto;
+}
+.myModal2 .form05>.md-form {
+    height:30px;
+}
+.myModal2 .form03>.textarea_meno>textarea {
+    padding:10px;
+    margin-top:-1px;
+    font-size:13px;
+}
+.myModal2 .form06 {
+    margin-top:0;
+}
+.myModal2 .form06>p {
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    font-size:12px;
+    text-align:center;
+    padding:5px 0;
+    font-weight:700;
+    margin:15px 0;
+}
+.myModal2 .form06>.input-group>input {
+    margin-top:23px;
+}
+.myModal2 .logo_bottom {
+    clear:both;
+    padding-top:35px;
+    text-align:center;
+}
+.myModal2 .modal-footer {
+    text-align: center;
+    border-top:none;
+}
+.myModal2 .modal-footer>.btn {
+    width:30%;
+}
+
+.myModal2 .form02>.shop_type {
+    position:relative;
+}
+.text_box_add>label>span {
+    position:absolute;
+    top:0;
+    right:-130px;
+}
+.text_box_add>label>.form-control {
+    width:160%;
+    position:absolute;
+    right:-120px;
+    top:-10px;
+    padding:0 3px;
+}
+.myModal2 .form03>.wi-fi fieldset:nth-of-type(11)>label>input {
+    left:100px;
+    width:190%;
+}
+.myModal2 .form03>.wi-fi fieldset:nth-of-type(11)>label>span {
+    right:-200px;
+}
+.contract_data {
+    position:relative;
+}
+.contract_data>.input-group>textarea.form-control {
+    width:65%;
+}
+.contract_data>.btn {
+    position:absolute;
+    padding:10px 15px;
+    bottom:-6px;
+    right:0;
+}
+.grey-skin .contract_data .btn-secondary {
+    background:#565d6b;
+}
+.grey-skin .modal-footer .btn-secondary {
+    background:#fc322c;
+}
+.ask_upload {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.grey-skin .ask_upload .btn-secondary {
+    background:#fc322c;
+    padding:10px 15px;
+}
+.main_box .table_select>.btn-group {
+    padding:0 20px;
+}
+.manage_view .table>tbody>tr>td.table_select {
+    width:150px;
+}
+.grey-skin .table_select .btn-default {
+    height:25px;
+    padding:5px 20px;
+    width:150px;
+    background-color:#fef7f6;
+    margin-right:20px;
+    color:#333!important;
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow:none;
+}
+.grey-skin .table_select .btn-default:hover,
+.grey-skin .table_select .btn-default:focus,
+.grey-skin .table_select .btn-default:active,
+.table_select > .btn-group.bootstrap-select.show-tick.open>.dropdown-toggle.btn-default {
+    background-color:#f5d9d5!important;
+}
+.bootstrap-select.btn-group .dropdown-menu li a {
+    font-size:14px;
+}
+.table_select .bootstrap-select.btn-group .dropdown-menu li a {
+    margin-left:0;
+    font-size:14px;
+}
+/*이미지 업로드 modal */
+.imgUp_modal>.modal-dialog {
+  margin-top:50%;
+    /*overflow:hidden;*/
+}
+.imgUp_modal .modal-body>.modal3_shop>p {
+  float:left;
+  color:#566471;
+}
+.imgUp_modal .modal-body>.modal3_shop>form {
+  padding-top:35px;
+}
+.imgUp_modal .modal-body>.modal3_shop>p>span.shop_name {
+  font-weight:700;
+  color:#333;
+}
+.myModal2 .form03 .imgUp_modal .form-group {
+  clear:both;
+  float:none;
+  width:100%;
+  margin:auto;
+  padding-top:15px;
+}
+.imgUp_modal .modal3_btn>btn {
+  text-align: right;
+}
+.imgUp_modal .input-group-btn:not(:first-child)>.btn {
+  height:34px;
+  font-size:12px;
+  top:-3px;
+}
+.imgUp_modal .file-caption-main .input-group-btn>button,
+.imgUp_modal .file-caption-main .input-group-btn>div {
+  width:31%;
+}
+.imgUp_modal .file-caption-main .input-group-btn>div.btn-primary {
+  width:138px;
+  margin-right:0;
+}
+.imgUp_modal .file-caption-main .input-group-btn>div.btn-primary>span {
+  display:block;
+}
+.imgUp_modal .file-caption-main .input-group-btn>button:first-of-type>i {
+  top:-9px;
+}
+.imgUp_modal .file-caption-main .input-group-btn>button:first-of-type>span {
+  display:block;
+  margin-top:-13px;
+  /*margin-right:43px;*/
+  width:48px;
+}
+.imgUp_modal .file-caption-main .input-group-btn>a>i,
+.imgUp_modal .file-caption-main .input-group-btn>a>span {
+  display:block;
+  top:-6px;
+  margin-top:-4px;
+}
+.imgUp_modal .close_check {
+  text-align: left;
+}
+.imgUp_modal .close_check [type=checkbox]+label {
+  font-size:14px;
+  font-weight:400;
+}
+.imgUp_modal .modal-footer {
+  position:relative;
+  border-top:0;
+  margin-top:-30px;
+}
+.imgUp_modal .modal-footer .btn {
+  position:absolute;
+  top:0;
+  right:2.5%;
+  width:23.1%;
+  padding:10px 0;
+  margin-right:0;
+}
+.manage_view .dropdown-toggle {
+    overflow: hidden;
+}
+/*모달 스크롤*/
+#myModal2,
+#myModal3,
+#myModal4,
+#myModal5,
+#myModal6 {
+  overflow:auto;
+}
+/*모달 위치*/
+#myModal3 .modal-dialog,
+#myModal4 .modal-dialog,
+#myModal5 .modal-dialog,
+#myModal8 .modal-dialog {
+  position:absolute;
+  top:-50%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+#myModal7 .modal-dialog,
+#myModal9 .modal-dialog,
+#myModal10 .modal-dialog {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/*수정 클릭시 모달*/
+.manage_view .btn_box>.btn-primary {
+  padding:12px 25px;
+}
+/*삭제 클릭시 모달*/
+#myModal7 p,
+#myModal9 p {
+  text-align: center;
+  margin-top:-25px;
+}
+#myModal7 .modal-header,
+#myModal9 .modal-header {
+  border-bottom:none;
+}
+#myModal7 .modal-footer,
+#myModal9 .modal-footer {
+  border-top:none;
+}
+#myModal7 .modal-footer button,
+#myModal9 .modal-footer button {
+  float:left;
+  width:45%;
+  margin:0 2.5%;
+}
+.table_select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width:150px;
+}
+/*게시글 없을 경우*/
+.blank_board {
+  clear:both;
+  height:100px;
+  width:100%;
+  background-color:#fff;
+  color:#ccc;
+}
+.blank_board>p {
+  line-height: 100px;
+  text-align:center;
+  font-size:14px;
+}
+
+
+#myModal3 #kvFileinputModal {
+
+}
+.modal3_shop #kvFileinputModal .modal-content {
+     top:40%;
+    margin-top:20%;
+}

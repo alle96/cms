@@ -1,0 +1,203 @@
+/*문의내용*/
+.inquire_view>.manage-info {
+  margin-top:20px;
+}
+/*테이블*/
+#accordion {
+  margin-top:50px;
+}
+.inquire_view .thead {
+  width:100%;
+  height:50px;
+  background-color:#f0f1f4;
+  border-bottom:3px solid #ccc;
+}
+.inquire_view .thead>div {
+  float:left;
+  font-size:16px;
+  font-weight:700;
+  text-align: center;
+  display:inline-block;
+  line-height:50px;
+}
+.inquire_view .delete {
+  width:5%;
+}
+.inquire_view .number {
+  width:7%;
+}
+.inquire_view .target_name {
+  width:10%;
+}
+.inquire_view .area_locate {
+  width:10%;
+}
+.inquire_view .phone {
+  width:10%;
+}
+.inquire_view .category {
+  width:10%;
+}
+.inquire_view .inquire_note {
+  width:35%;
+}
+.inquire_view .sign_up {
+  width:13%;
+}
+.inquire_view .panel-default>.panel-heading {
+  position:relative;
+  color: #333;
+  background-color: #fbfbfb;
+  border-color: #ddd;
+  padding:0;
+  clear:both;
+}
+.inquire_view .panel-title {
+  width:100%;
+}
+.inquire_view .panel-title>a>span {
+  display: inline-block;
+  text-align: center;
+  font-size:14px;
+  hegiht:40px;
+  line-height:40px;
+  color:#333;
+}
+.inquire_view .panel-title i.fa-angle-down {
+  position:absolute;
+  top:12px;
+  right:17px;
+}
+.inquire_view .choice {
+  display: inline-block;
+  width:5%;
+}
+.inquire_view .number0 {
+  width:7%;
+}
+.inquire_view .target_name0 {
+  width:9%;
+}
+.inquire_view .area_locate0 {
+  width:10.5%;
+}
+.inquire_view .phone0 {
+  width:9%;
+}
+.inquire_view .category0 {
+  width:10.5%;
+}
+.inquire_view .inquire_note0 {
+  width:35%;
+  max-width:95%;
+  display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+.inquire_view .inquire_note0>a>p {
+  /*max-width:95%;
+  display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;*/
+}
+.inquire_view .sign_up0 {
+  width:11.5%;
+}
+.inquire_view .choice>.form-group {
+  position:absolute;
+  top:16px;
+  left:20px;
+}
+.inquire_view .choice>.form-group input[type=checkbox]:checked+label:before {
+  position:absolute;
+  top:-11px;
+  left:5px;
+}
+/*내용*/
+.inquire_view input,
+.inquire_view span {
+  font-size:14px;
+}
+.inquire_view .panel-collapse {
+  border:1px solid #ccc;
+  border-top:0;
+}
+.inquire_view .panel-collapse>.content_box {
+  width:95%;
+  margin:auto;
+  padding:20px 0;
+}
+.inquire_view .panel-collapse .header {
+  overflow:hidden;
+}
+.inquire_view .panel-collapse .header>.input-group {
+  float:left;
+  width:30%;
+  margin:10px 0;
+  border-bottom:1px solid #ccc;
+}
+.inquire_view .panel-collapse .header_info>div {
+  border-bottom:1px solid #ccc;
+}
+.inquire_view .panel-collapse input {
+  padding-left:20px;
+}
+.inquire_view .panel-collapse span:first-of-type {
+  width:120px;
+  padding:15px;
+}
+.inquire_view .panel-collapse span.inq_text {
+  display:inline-block;
+  margin-top:14px;
+  padding-left:10px;
+}
+.inquire_view .panel-collapse .header>.day_set {
+  float:right;
+  line-height:75px;
+  font-size:14px;
+  padding-right:20px;
+}
+.inquire_view .header_info {
+  overflow:hidden;
+}
+.inquire_view .header_info>div {
+  float:left;
+  width:30%;
+  margin-right:5%;
+}
+.inquire_view .header_info>div:last-of-type {
+  margin-right:0;
+}
+.inquire_view p.inquire_text {
+  font-size:14px;
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  margin:10px 0;
+  height:200px;
+  overflow:auto;
+}
+.inquire_view .shop-note textarea.form-control {
+  /*border-radius:5px;*/
+  /*padding:10px 20px;*/
+  overflow:auto;
+}
+.inquire_view .mid_button {
+  text-align: center;
+}
+.inquire_view .pane_sub {
+  border:none;
+  padding:0;
+  margin:0;
+}
+/*게시글 없을 경우*/
+.panel .blank_inq {
+  text-align: center;
+  height:100px;
+  line-height:100px;
+  font-size:14px;
+}
